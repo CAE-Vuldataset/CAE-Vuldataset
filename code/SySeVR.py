@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/test/database/SySeVR/Program data/NVD/"
+program_path = "./SySeVR/Program data/NVD/" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

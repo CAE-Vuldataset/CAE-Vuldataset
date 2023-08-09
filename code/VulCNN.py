@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/test/database/VulCNN/dataset/Dataset-sard/Vul/"
+program_path = "./VulCNN/dataset/Dataset-sard/Vul/" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

@@ -7,7 +7,7 @@ sum=0
 num=0
 list=[]
 list2=[]
-program_path = "D:\leak\数据集\\vulnerables.json"
+program_path = "" # your path
 
 if __name__ == '__main__':
     with open(program_path) as f:

@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/Magma/Single_vulfile"
+program_path = "./Magma/Single_vulfile" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

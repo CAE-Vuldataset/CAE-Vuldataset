@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/test/database/Function-level-Vulnerability-Detection/data/LibPNG/Vulnerable_functions/"
+program_path = "./LibPNG/Vulnerable_functions/" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

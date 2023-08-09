@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/test/database/VulDeePecker"
+program_path = "./VulDeePecker" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

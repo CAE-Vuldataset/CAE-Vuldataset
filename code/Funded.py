@@ -1,7 +1,7 @@
 import os
 import sys
 
-program_path = "/home/platform/test/database/FUNDED_NISL/SARD/"
+program_path = "./SARD/" # your path
 maxnum=0
 minnum=sys.maxint
 sum=0

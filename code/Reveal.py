@@ -6,7 +6,7 @@ minnum=99999999999
 sum=0
 num=0
 list=[]
-program_path = "D:\leak\数据集\dataset.json"
+program_path = "./dataset.json" # your path
 
 if __name__ == '__main__':
     with open(program_path) as f:

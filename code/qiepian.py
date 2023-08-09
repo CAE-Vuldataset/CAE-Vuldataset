@@ -1,10 +1,10 @@
 import os
 import sys
-
-program_path1 = "/home/platform/test/database/VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/AD_slices.txt"
-program_path2="/home/platform/test/database/VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/AE_slices.txt"
-program_path3="/home/platform/test/database/VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/FC_slices.txt"
-program_path4="/home/platform/test/database/VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/PD_slices.txt"
+# your path
+program_path1 = "./VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/AD_slices.txt"
+program_path2="./VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/AE_slices.txt"
+program_path3="./VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/FC_slices.txt"
+program_path4="./VulDeeLocator/data/iSeVCs/iSeVCs_for_train_programs/PD_slices.txt"
 maxnum=0
 minnum=sys.maxint
 sum=0

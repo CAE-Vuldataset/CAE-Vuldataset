@@ -43,5 +43,6 @@ Thirty-one open-source vulnerability datasets along with their corresponding pap
 | [VulPecker](https://dl.acm.org/doi/abs/10.1145/2991079.2991102) | VulPecker: An Automated Vulnerability Detection System Based on Code Similarity Analysis | ACSAC | [link](https://github.com/vulpecker/Vulpecker) |
 
 ## Folder Description
-`./attribute/`: The program used to calculate each attribute are stored
-`./model/`: The model reproduced in the paper are stored
+`./attribute/`: The program used to calculate each attribute are stored.
+
+`./model/`: The model reproduced in the paper are stored.

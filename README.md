@@ -1,15 +1,14 @@
 # SoK: Software Vulnerability Dataset
 
 ## Description
-
 Software vulnerabilities are a primary cause of cyberattacks, with new vulnerabilities being discovered on a daily basis.There is a community studying a range of problems related to vulnerability analysis, detection, and automated patching, all of which require competent datasets. However, there is no systematic understanding on the competency of vulnerability datasets for these purposes or application tasks, let alone benchmark datasets. The present SoK aims to fill this void by proposing a set of attributes to characterize software vulnerability datasets. We evaluate the impact of the dataset attributes on the effectiveness of four application tasks. We show that the attributes and their characteristics can not only guide researchers in selecting suitable datasets for their application tasks, but also guide the creation of future datasets that exhibit the desired characteristics.
 
 We first conduct a study of 72 vulnerability datasets, including 62 academic publications and 10 industrial datasets, then we identify and systematize 31 vulnerability datasets that are publicly available.
 We also discuss future research directions.
 
 ## Vulnerability Datasets
-
-| Dataset | Paper | Venue/Organization | Link |
+Thirty-one open-source vulnerability datasets along with their corresponding papers and open-source links.
+| Dataset | Paper | Venue/Organization | Link(For Datasets) |
 | --- | --- | --- | --- |
 | [benchmark](https://link.springer.com/chapter/10.1007/978-3-030-41579-2_13) | Deep learning-based vulnerable function detection: A benchmark | ICICS | [link](https://github.com/Seahymn2019/Function-level-Vulnerability-Dataset/tree/master/Data) |
 | [BigVul](https://dl.acm.org/doi/abs/10.1145/3379597.3387501) | A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries | MSR | [link](https://github.com/ZeoVan/MSR_20_Code_Vulnerability_CSV_Dataset) |
@@ -44,4 +43,5 @@ We also discuss future research directions.
 | [VulPecker](https://dl.acm.org/doi/abs/10.1145/2991079.2991102) | VulPecker: An Automated Vulnerability Detection System Based on Code Similarity Analysis | ACSAC | [link](https://github.com/vulpecker/Vulpecker) |
 
 ## Folder Description
-`./code/`: Script programs used for statistics are stored
+`./attribute/`: The program used to calculate each attribute are stored
+`./model/`: The model reproduced in the paper are stored

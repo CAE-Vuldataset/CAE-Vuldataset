@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dq-analysis
+Version: 0.1
+Requires-Dist: captum
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: tokenizers
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: transformers

@@ -1,0 +1,3059 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "7d24b6ed335ccfc1cb24ba8e2ffcdcf90a8f1174dacae2ed09c9e2e6db3b0a7f",
+      "size_in_bytes": 375
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "441257136e0ec7e2b1d6f252350cea32c98a4f0266524f5e1461d546eb3e10f2",
+      "size_in_bytes": 7380
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/not-zip-safe",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/requires.txt",
+      "path_type": "hardlink",
+      "sha256": "7eb875bf08f1d6e45bac1c752daa11bd32917810d051a1f7dbace48deb010089",
+      "size_in_bytes": 58
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl-0.7.2-py3.9.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "2ea5374672fd2c397ee0f24a5f87715b8a88187c87559e3fbd3c452a6c99aa41",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "470a5943bc91453a0eda6752c4f7bf3c16058d7a3855979954dbe69c62b72785",
+      "size_in_bytes": 1356
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "15b98ddacca8802f13c1d220976c08872e9b7c30bd92481363166902ad2ed54b",
+      "size_in_bytes": 1487
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/_api_internal.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "882a89bdac41eba749e4f84f89293a7989890d37238dbdf1031230d9546e3b32",
+      "size_in_bytes": 179
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/base.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8c5e9d4b580da8dcd8c96935a2538fd91eb63a9bad38c6c33841863fa6563b08",
+      "size_in_bytes": 1671
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/batch.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b7a52996f39937a448904d285457eab9c99ade1fd366ec2b65cce85a2620cdb4",
+      "size_in_bytes": 18481
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/container.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4ba6d9000bd37724d8f3cf5492c9749959dae12b88ccc4de8febfc724c1b4e67",
+      "size_in_bytes": 4093
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/convert.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9f069229c88f0ecd93967fc755eb3aac44864afe1f9a9d9c2637c0478fa31000",
+      "size_in_bytes": 65037
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/core.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "781ffad3a09f32e4c61f104a9e0b58875e94e4a38977f37f61e2c47211fd0a52",
+      "size_in_bytes": 10350
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/frame.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7442796468cc28b699d157259287c1330cb8d4df56c1b8b50752133fd39aa67a",
+      "size_in_bytes": 20835
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/generators.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "39b12d96255cc14b617cc34aa428a54720860e3990d44c827697cb79f487be02",
+      "size_in_bytes": 3974
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/graph_index.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ae094539be426321023da9166df55fd9defbc1c9237ad76f84e0110f3eae6337",
+      "size_in_bytes": 35981
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/heterograph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3b4f2b7dfbc31133b01a53ad27716f57679337f5aa4a8db1e36101b262332572",
+      "size_in_bytes": 220633
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/heterograph_index.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3ca227be310575ace484499969e79f31ff429937f272869a2e88d30c81355b64",
+      "size_in_bytes": 40958
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/init.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e601d5b9fd1b36aedf5ee8946962aaf6245de5fada8250fd00d66d05cf4e72f2",
+      "size_in_bytes": 1970
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/ndarray.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "79951ab21729cf650219c9229a3e04af26bfc2650510270798f4f1720d4907da",
+      "size_in_bytes": 6607
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/network.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "dce268da16bf6df6eb7ddc8f661b2fa74144b94ac2fb9d28f9caf07a051d0dc0",
+      "size_in_bytes": 8465
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/partition.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "38a9912c7dd67211a99f01f3aedef941ca21ed9da1bbe68282eb52426456a06a",
+      "size_in_bytes": 15652
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/propagate.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9f8f7a4ccb090699d116744a6eccf9996178289d1e9529d0cda1f3c4a9696a36",
+      "size_in_bytes": 5195
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/random.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9d74a1dad24d67d906b48f0034bda77d8b61092b45328db0be25f242a0ef2e05",
+      "size_in_bytes": 2697
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/readout.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "762a5dbdcf0241f0887683861e0f283c47c21133989cc8a8a88c680d4f3cd902",
+      "size_in_bytes": 27359
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/sparse.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e8b74fc3ac75328182613df591d6606c4183afae01620ee2e14f6dadb2bee4e",
+      "size_in_bytes": 17067
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/subgraph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9d4bbddc99a518d63f19c50976f7f4eb5c052c1148fd61f8f629d51b2911005c",
+      "size_in_bytes": 28287
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/transform.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cdf73c6c395b33eb51750637684978c1d71931b97eb2cd3f67434735735c86e6",
+      "size_in_bytes": 109425
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/traversal.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ccc512ca27bf5e42f560681dfb264f234a6ad94697a397af3f88364295413e0f",
+      "size_in_bytes": 8739
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/udf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bfe24598272306baf7f3a540cd56873d9d79d481fb0e7d8a63a423ecc4a9e18d",
+      "size_in_bytes": 13603
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/__pycache__/view.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "dca69a101f8046914b6fe896310ad77c736fbbac195f207778df29b11b007370",
+      "size_in_bytes": 8841
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_api_internal.py",
+      "path_type": "hardlink",
+      "sha256": "4f283de6270207177bd7c9f3e6b631e26441d3fb23d8fb0be01e4645f0ff06de",
+      "size_in_bytes": 35
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c96cbd86c3d1366177a32059136f04d231cc3b266d5e7bd4fff09b9fef7bb545",
+      "size_in_bytes": 145
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/frame.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f46879495f0aec0bd9bbe598429ee7817f2edb736025df7f36df7e27d4465d27",
+      "size_in_bytes": 31307
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/graph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "184f1701527556964395ee76209fe8a62f8453110ce4d20950cd4e1d54b206ed",
+      "size_in_bytes": 138423
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/kernel.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "795833ea408416fad6f4f39a0da0413532fd1c72fa652864581a986cb91123d3",
+      "size_in_bytes": 13877
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/nodeflow.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "917d1c6b9a1577817916d43df0b864f6b75a673cd3102dd97f23a5000ed05014",
+      "size_in_bytes": 33843
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/udf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1a85a9239ef9c6d0897001ac9f925f8b4d5f3111c4e672added5bd2a7f73be25",
+      "size_in_bytes": 5794
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/__pycache__/view.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0b0d770e1b4c8fc534019834845a58223aa6ee8399c40ff34ead7fbb7a01f365",
+      "size_in_bytes": 10648
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/frame.py",
+      "path_type": "hardlink",
+      "sha256": "440e2880496f73816210a2fe1ca00e1536348ac5904f06806d6c462d1442e0a0",
+      "size_in_bytes": 33928
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/graph.py",
+      "path_type": "hardlink",
+      "sha256": "20a79a359c8dad3a5e0b0576d7b96b894a9d7f89e8d5e3508ad45cae26a8bf3e",
+      "size_in_bytes": 148476
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/kernel.py",
+      "path_type": "hardlink",
+      "sha256": "1d3be8a290b773fc6078e693a6619eba3d1b584435dd718bfe823d50c41be325",
+      "size_in_bytes": 14441
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/nodeflow.py",
+      "path_type": "hardlink",
+      "sha256": "6866777a9274a7cb470dbc5a8ed953741c108f758da32704ee2cfc4592996ccb",
+      "size_in_bytes": 40708
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "f03eef1544fc05c33b7f9e569061693c9199c86546dcdd0478f816f261e6a2d8",
+      "size_in_bytes": 172
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "38e4a23e861922b90d2c5a99d2229028150cb13731214b67a461133cac69da48",
+      "size_in_bytes": 380
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/adapter.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "37754050d3d9d71a59616f6f575b31b1576e9bdf78b718f157eaba8cb1195ca6",
+      "size_in_bytes": 3896
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/degree_bucketing.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8aeea66da0e4987aaec76f938fbf7ae9a4b7f3eb556868ee69f146a940173ae0",
+      "size_in_bytes": 10880
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/runtime.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "29e262a2b1eee2eddabce1152318344000e8f2de60542afb242aabaec5d0e776",
+      "size_in_bytes": 568
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/scheduler.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e149413407de8eae6af8f455438351f69c3cbdfe54dbad9e897b0ebf372c7126",
+      "size_in_bytes": 26780
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/__pycache__/spmv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a65b2e67403e16a7007dd470a6af95e46cf2cfbf231ec4931cbbd4d0987f501b",
+      "size_in_bytes": 7489
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/adapter.py",
+      "path_type": "hardlink",
+      "sha256": "db9e5b44cd3836db9f14d56e80759607d8c16e79d69d50a2d11eaa792d21fe66",
+      "size_in_bytes": 2634
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/degree_bucketing.py",
+      "path_type": "hardlink",
+      "sha256": "652c969c07d870f0f47fd151008d6b6392161bb094e0f2336132fff1accb9576",
+      "size_in_bytes": 11671
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "a3a4ee76421a56cb97b35cf865b3e7dd4bc225edbe6a0005e9f5991f7119af15",
+      "size_in_bytes": 105
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cc5f903c31dc1688366d77971314a69f37b1ad2c59e34382f40c191162ef35e8",
+      "size_in_bytes": 291
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__pycache__/executor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b37ded42c6a152c78dc70f86fadffe9e4038467c7dcc10124e68cfd2aa3a7c97",
+      "size_in_bytes": 37135
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__pycache__/program.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bd43d62efc676ece554a105d13514bff4bd174a64314cc246124db471231a2b9",
+      "size_in_bytes": 2962
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__pycache__/registry.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "30af9675a502954713d0f19e3176321d725486db4ccfcb241d8576db8bd6f97a",
+      "size_in_bytes": 265
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/__pycache__/var.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d6ab38df3b5dd3840ee796cd1ff0dd2b89ef4e341e72a4314a3c3d1630f3d6a6",
+      "size_in_bytes": 3298
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/executor.py",
+      "path_type": "hardlink",
+      "sha256": "e733d4253a7a8ae8db33b8f4e25dc486b413318992ebec909ec3061685a486c8",
+      "size_in_bytes": 34430
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/program.py",
+      "path_type": "hardlink",
+      "sha256": "dbdeba5ff159cf51e19a549eb60fa62087d47a5c9d08ac46dfb330bf64100128",
+      "size_in_bytes": 1969
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/registry.py",
+      "path_type": "hardlink",
+      "sha256": "d696e80f20f8089e9769e5ffa47b06c9ace7d136347915e1c519da37d48e3525",
+      "size_in_bytes": 87
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/ir/var.py",
+      "path_type": "hardlink",
+      "sha256": "2fa15c277e6b913480e869e4075c2ca7bbeb561bea2f6210a0c59eb297177a26",
+      "size_in_bytes": 2647
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/runtime.py",
+      "path_type": "hardlink",
+      "sha256": "6408d0976f41e329077764afa21a084d9f643659ecfbdf76ea551cbeaf7176cf",
+      "size_in_bytes": 245
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/scheduler.py",
+      "path_type": "hardlink",
+      "sha256": "8f0a1b1c97614a5d28bd3bfcee3470c19bd0f405f8e5125efb62146bfd01e299",
+      "size_in_bytes": 40482
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/runtime/spmv.py",
+      "path_type": "hardlink",
+      "sha256": "2cce8f34ca24884ab7740965c24e4068e6b04f37c4bf1bdc4f64ec15833d8bac",
+      "size_in_bytes": 7741
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/udf.py",
+      "path_type": "hardlink",
+      "sha256": "0aa0aca5a9e97c7067e0bedc7032354413da5c3a27dbbfe8773b10abba47ba06",
+      "size_in_bytes": 4838
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_deprecate/view.py",
+      "path_type": "hardlink",
+      "sha256": "e39f47b3d3b5ae60816e77cfb8a526f60ad7667ccef340ad1e0a6e4b8d374646",
+      "size_in_bytes": 7312
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "88be9b7bce2637bba0ba4bcefffad867a418a404ed92057836f001a79bc9f9b1",
+      "size_in_bytes": 350
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f06b23d629c0db6b0f9e4d14e340d3ff454a90cbee39f10ad8163234882b3363",
+      "size_in_bytes": 497
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/base.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "237a6f46908d7485172df3bf2ce4b19269366e0d972c648defaad57df3f0efe6",
+      "size_in_bytes": 3763
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/function.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c55ec075e211245c2a68bc466b83ac7525676c66e767232b38c5b8f46f40044b",
+      "size_in_bytes": 8979
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/libinfo.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7c909cfa75ef2ef81f8a077e4413d12b9c5e67ab64c9fe9b24760d8774d96785",
+      "size_in_bytes": 2478
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/ndarray.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "91da311ba01e5949cd9d9b09bafd9ca4cc8771f08583c9170333ee6ac34a647b",
+      "size_in_bytes": 11143
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/object.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "50c282b07fa464a425f07c635b6bdac979ab0f728687dd3dc8ccfe3741c30c85",
+      "size_in_bytes": 3597
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/object_generic.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9671ad9e3f4b235ac332caf5709a2c8966a3c02fe96f8d04937f8768f0cef5c1",
+      "size_in_bytes": 1855
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/__pycache__/runtime_ctypes.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0bdad56807e2f402602d07d11abf1bda7cbe766366c18e39ff650109687a731c",
+      "size_in_bytes": 7595
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "31a1e673e8c4229a334521bd7fc34367ce5aa5b83af5ad59c768df612280de21",
+      "size_in_bytes": 44
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f3f6301e0b30fe4a3e556af7c4d817967a28ad0b349604349a23dd76c17fdb46",
+      "size_in_bytes": 196
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__pycache__/function.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b0a82bcdbb26a7f1fc283ae037675889b448e19d9fdb4c89a34751dd47b5ae57",
+      "size_in_bytes": 7290
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__pycache__/ndarray.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "75526f16b5a709546040a02c0c61663b02d6b57de92281f6a9a24bd986dbb2ba",
+      "size_in_bytes": 3957
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__pycache__/object.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5cb5489e87cd5fdeabcd5e4a754248768cc7c4433b645e1384037004cc68e7af",
+      "size_in_bytes": 2898
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/__pycache__/types.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c2535eb09e2178c02aba8300927ba298cbb20ec6f24242f817e0b2f1d1e5ce1b",
+      "size_in_bytes": 3029
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/function.py",
+      "path_type": "hardlink",
+      "sha256": "f66826df3c4d1b14a1deb85a70868089b5f992f071a1c66c74379e604cb142bf",
+      "size_in_bytes": 9040
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/ndarray.py",
+      "path_type": "hardlink",
+      "sha256": "b69a63463cf4f59214f6a298a00825a773d1a5aea81de07cbeff6a4c591a0dcc",
+      "size_in_bytes": 4079
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/object.py",
+      "path_type": "hardlink",
+      "sha256": "478c688148e9eeac46be403f4ce3b492ba05046d5284c3963d241967b237ac93",
+      "size_in_bytes": 3007
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_ctypes/types.py",
+      "path_type": "hardlink",
+      "sha256": "a368e0a36fdb11447255f01454e2b4f1be278d5f590165ac15ed03d6aea3a8aa",
+      "size_in_bytes": 2326
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cy2/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "6d1c9d09ace8bd62a6bc4f69329f9e3c400eae8c260a29879b08bfd3a777920d",
+      "size_in_bytes": 24
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cy2/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5943ac3aa003784c55e01fb6cb10b9d24b3c6e52f965c30817e5c128055dd156",
+      "size_in_bytes": 173
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cy3/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "f017885d07429335d01c7a9fe6973a724ccd3b959333b179f6ef0334f1d96022",
+      "size_in_bytes": 24
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cy3/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8da13fbc22b885da347f4501f3b724c20e37f34b10c617506364453f1b64dea9",
+      "size_in_bytes": 173
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cy3/core.cpython-39-x86_64-linux-gnu.so",
+      "path_type": "hardlink",
+      "sha256": "ee318f481890530ca346b0e0052e207b265765e357a3a16d5322a68ea3461487",
+      "size_in_bytes": 168664
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/_cython/core.cpp",
+      "path_type": "hardlink",
+      "sha256": "70e32bba3b9d37a9ac94f17d5d2569488ed35d3115735ab0da7e9f23270d4619",
+      "size_in_bytes": 561210
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/base.py",
+      "path_type": "hardlink",
+      "sha256": "e57d6d1dbd85b1ba3fc913bf3169a59cffb172bf76147e046c9b8b8e94f59333",
+      "size_in_bytes": 3677
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/function.py",
+      "path_type": "hardlink",
+      "sha256": "0d3c5e9a9434daf41e24a29e48391e34a1ac72e2914091d81fa1c358a83c609d",
+      "size_in_bytes": 9264
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/libinfo.py",
+      "path_type": "hardlink",
+      "sha256": "a01955f496fa847b04b9bd2a52884bad26275f7159b934f81aa44994dc870a12",
+      "size_in_bytes": 3122
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/ndarray.py",
+      "path_type": "hardlink",
+      "sha256": "d81d855030721f4c4746438d70e5bfc1fb68f8f24ebdc0a7bf375035a933eaf3",
+      "size_in_bytes": 11337
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/object.py",
+      "path_type": "hardlink",
+      "sha256": "459c389ac00255289c044a3e8619fba2058f9adfe8ec201ff433ad7e28cc280a",
+      "size_in_bytes": 3657
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/object_generic.py",
+      "path_type": "hardlink",
+      "sha256": "a10b8cbfc91ff5fbc056168bfdfb480c1dd6db075ae60fc16d8232b611f6b027",
+      "size_in_bytes": 1571
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/_ffi/runtime_ctypes.py",
+      "path_type": "hardlink",
+      "sha256": "828c8bec3246ff9a055199fe5e069651e8765a1f91da467b38c50a76c659d143",
+      "size_in_bytes": 7238
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "7aad165008c4ed97ff182783823f12b34802302c9da2f3935e13a016a487ed18",
+      "size_in_bytes": 4401
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ed5de8c29d2fd559b87e8caa58fa53b4c326380e34084fcba27b498d0e896cc9",
+      "size_in_bytes": 3194
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/__pycache__/backend.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "51dac977cf662f5115c7725197b624996465cf2768156ce1cbc77424b8b2ab53",
+      "size_in_bytes": 48498
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/__pycache__/set_default_backend.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d7ad17c1dfdcdfdf56375dfe20fd15cd4bb1bc8033bc1cfb34001fd0cd7c0608",
+      "size_in_bytes": 1136
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/backend.py",
+      "path_type": "hardlink",
+      "sha256": "5f4e37fab3496df873e6ad2cbcbc78e71442ca89841e62d7c66d99292e089ab1",
+      "size_in_bytes": 42568
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e8582125d3a894c72fc522face6a9e3773f5f4c6f0ecabea1a84f09c4b9c10a1",
+      "size_in_bytes": 44
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0660d32fccc514d5d5a6555007bad7d1de750023a0629c0ebac1e5448fb05051",
+      "size_in_bytes": 189
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/__pycache__/sparse.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8697b38ca4049354045ca9324b2817a62dfda5a4461d8510e9c4f55efa39682f",
+      "size_in_bytes": 14455
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/__pycache__/sparse_optim.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c873bcbdf4f238fb1deba6e7c356dc8766a4f0365ecd10589ee08e974dee2c6c",
+      "size_in_bytes": 207
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/__pycache__/tensor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "42ef3de516a32964e4692dd140f14c5ca9f55d95ffd214ed9a4337d21e230f35",
+      "size_in_bytes": 20788
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/sparse.py",
+      "path_type": "hardlink",
+      "sha256": "f8291450753d88dd16863c692c5672f13f87f4b13dbf7802fbb184b85a403302",
+      "size_in_bytes": 16961
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/sparse_optim.py",
+      "path_type": "hardlink",
+      "sha256": "2123c35e5791ae5bae8f2a0b3d0a85e2855bfcf00d311aed72eb382834405b2c",
+      "size_in_bytes": 49
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/mxnet/tensor.py",
+      "path_type": "hardlink",
+      "sha256": "1dad99144a61a917a922ac52d36202172eb5fff50b8a3a0eba13d48ab84dad30",
+      "size_in_bytes": 20510
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e8582125d3a894c72fc522face6a9e3773f5f4c6f0ecabea1a84f09c4b9c10a1",
+      "size_in_bytes": 44
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8d613509cbb5a3a9c731b7d82dfe0e43a7cccb0aafb7c8c9dea821208bce0474",
+      "size_in_bytes": 191
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/__pycache__/sparse.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1350b0537a01c431681ab7bc72a0532a9430804061401acb5ff3b343943fce72",
+      "size_in_bytes": 16813
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/__pycache__/tensor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3c46520460148a9cd5259f3773296525683da04077061a19485fb62ecffee34b",
+      "size_in_bytes": 19308
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/sparse.py",
+      "path_type": "hardlink",
+      "sha256": "ccea7d4a66482fe6b7553e2eced30568bfbcd58a0f32ac278b93df65373bcfdc",
+      "size_in_bytes": 20890
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/pytorch/tensor.py",
+      "path_type": "hardlink",
+      "sha256": "9eff248c52c322afebc6f641c1f355acd19b1a722ee4b313ba491a61276b0249",
+      "size_in_bytes": 19050
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/set_default_backend.py",
+      "path_type": "hardlink",
+      "sha256": "8a028b8080f83c37773c3201b36ca2940f753427d71400a819a470fac081eb0c",
+      "size_in_bytes": 1021
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "11d428d36baa260bacb992e3adc2d38ab71c75d6ed339ec42dca34546a7e4f04",
+      "size_in_bytes": 104
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f4a20ed5e5d734e712c4d1d7c06f24d278f61a8ad380dc387a68bcd98d7ff789",
+      "size_in_bytes": 267
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/__pycache__/sparse.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "2dd66b288cca11177f7fc5074b7c256a9eba39f096615c197eb99761ab3d0ab0",
+      "size_in_bytes": 11649
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/__pycache__/sparse_optim.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3fb6008db140b1b330801caa96e9e67c1bc84746f68222f06a18e8d26ed4bc3f",
+      "size_in_bytes": 217
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/__pycache__/tensor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9a3c105712be466b3d7f449c426840d371a065e2d65fe53c9fd613aa0d5a92c4",
+      "size_in_bytes": 22654
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/sparse.py",
+      "path_type": "hardlink",
+      "sha256": "dfb4ce42b02e151c7d90e6ea990043209129e16fbb512cfc50c9456f5ec23866",
+      "size_in_bytes": 12943
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/sparse_optim.py",
+      "path_type": "hardlink",
+      "sha256": "022219c0f33efc8dba26c63a43f378000e30703055d17b4ef3cbf14300883017",
+      "size_in_bytes": 54
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/backend/tensorflow/tensor.py",
+      "path_type": "hardlink",
+      "sha256": "8b678dff272225f29347882e253aa2231cc0c2f141788c7239b71493d7feafc1",
+      "size_in_bytes": 21221
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/base.py",
+      "path_type": "hardlink",
+      "sha256": "d0632e8a479afc85f116b084302f60171ce8e34383471a43cd175c5c4c1af85e",
+      "size_in_bytes": 1570
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/batch.py",
+      "path_type": "hardlink",
+      "sha256": "eb0136e8a1f5172b9983b716734bbbbb6ebb982685887ba3e05daf4746f70724",
+      "size_in_bytes": 19390
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/container.py",
+      "path_type": "hardlink",
+      "sha256": "0dc93910615060828c20b6428f485ef1f3055751a7dee19d906555653232f1f6",
+      "size_in_bytes": 2949
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e694a551859c1018b29f2b10b1cb479453117af74118440732ad6f99ae29d7f6",
+      "size_in_bytes": 133
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a8e0ed6c9e6c0e4d76b190bd054e6d422338652e5afcc4a5c9b098116ee129a2",
+      "size_in_bytes": 309
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/__pycache__/dis_kvstore.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b982ce01f7ac6d29e9dfcc6ba3cef49546b77e5aa1fd3786339a13f0f0a8429c",
+      "size_in_bytes": 31387
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/__pycache__/graph_store.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4d9c1cd5f4bfbf2b6c024fd1d5aaac04ba6f5cf58c37ffaab0c0761f5ebc7a21",
+      "size_in_bytes": 40328
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/data/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "86e3dad8e50f02face87a253e0734d6409d680aa1e2a08338ad5e0699175f4d6",
+      "size_in_bytes": 415
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/data/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a28e502e0527ed53e8a0d48c70d35d98189b9ac0b235f868d8c83c7cc4bb9967",
+      "size_in_bytes": 576
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/data/__pycache__/knowledge_graph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1fe34cf892c30dd5eaf077e35da7187c3b95d0c9b59ad92c6208c62889413b91",
+      "size_in_bytes": 15836
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/data/knowledge_graph.py",
+      "path_type": "hardlink",
+      "sha256": "a18ffd2d4225396fbc02d510fb8d42a1eaf93345605aba68ab207c2553cc12f8",
+      "size_in_bytes": 18799
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/dis_kvstore.py",
+      "path_type": "hardlink",
+      "sha256": "db651e580c5e5e344745ceb3ed9cca486facd9886207d22d35bfa933eb3089b4",
+      "size_in_bytes": 48236
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/graph_store.py",
+      "path_type": "hardlink",
+      "sha256": "47b7206a3995848747e8630e328c6684469470ee8da91612dcba14d70bc5e377",
+      "size_in_bytes": 40469
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "6b99a6b58791c7c6cc40c6a370427a85146549785fac001708a30ab7b26abadc",
+      "size_in_bytes": 183
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4faf2d1c4eacbe00e3deaefc21b06b0e3a9948dcbb038b3ab94e107ea2b18cef",
+      "size_in_bytes": 379
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/__pycache__/dis_sampler.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "24667a1ae4a7a7ab9f20716c84a18f6bd3fe4abb2365fff1c7653d42e8333c6a",
+      "size_in_bytes": 7594
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/__pycache__/randomwalk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "22ad3709e56b30b2d2bfd2ec298646f13e05cda233070d9e46e9e086c3d40c6c",
+      "size_in_bytes": 7584
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/__pycache__/sampler.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ee735583aa81c807b9dc653e8a20f1761a47156b5f3af46af58e36a706e9897b",
+      "size_in_bytes": 27682
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/dis_sampler.py",
+      "path_type": "hardlink",
+      "sha256": "da265451b97c545b20cb88238f625d5cf69f5b66cdac19f3cbee147de84edc65",
+      "size_in_bytes": 7050
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/randomwalk.py",
+      "path_type": "hardlink",
+      "sha256": "061b8b7459f509fd75adb4161ed3631a0f92ce0268393d86b40408c0b6f1a933",
+      "size_in_bytes": 7860
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/contrib/sampling/sampler.py",
+      "path_type": "hardlink",
+      "sha256": "17da38691b40a6b33b6b1b0cfa6b44b86d0a2cf4382749f9550d22a89fc20464",
+      "size_in_bytes": 30554
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/convert.py",
+      "path_type": "hardlink",
+      "sha256": "b1017063d127774accd0802ad3362a7f02f23f673f3c4f0834ea6eeb791e12bb",
+      "size_in_bytes": 74371
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/core.py",
+      "path_type": "hardlink",
+      "sha256": "b6e6ccc5ef7a0431f7c2667045eee1115a3f3394928c532dbca367bd7d2887f9",
+      "size_in_bytes": 12019
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/cuda/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "80d24b0b8e083cca0721396e523beca4bace4ef8812e01b208ef0960e2561a46",
+      "size_in_bytes": 41
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/cuda/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a422445fe81fc6039ccc088982c42c682db34a5ff239d2c8be0f9784858f8594",
+      "size_in_bytes": 200
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/cuda/__pycache__/nccl.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5f86743a0dc5d63d3f1429f27b0ee8926aa667a0cdbcd9cca2466ad1874ca53e",
+      "size_in_bytes": 8593
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/cuda/nccl.py",
+      "path_type": "hardlink",
+      "sha256": "5ff5df14eaf8dd8978c01c164ca5cc26e0f09cc8ee26d65df4585690d83791a1",
+      "size_in_bytes": 7819
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "43827363bd1e468a0d5c1558c38347fdb90a34925676b1db3445bcb0c3e940c6",
+      "size_in_bytes": 2143
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "933a13444cb766abf5422d5ed70e583d4244fa8fcad0a32e7a8e7b8267ab1602",
+      "size_in_bytes": 2724
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/bitcoinotc.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3a0703595ddbff1f21fae33f88baca7b5ba516959bc962db072987e9bb4ae33a",
+      "size_in_bytes": 5921
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/citation_graph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "24bcab533f622d6d27ea97ab8252b5e5d94e4c67c6ffb9471226fb6f672db06e",
+      "size_in_bytes": 29226
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/dgl_dataset.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9d99a1814e917a53fb613fc25f2d47feffed1b01c0efe10c7085ac3cb209f175",
+      "size_in_bytes": 10048
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/fakenews.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bd1f1f2056162ec8b2e562e7e79b1606f77c1bd8680ae7d148e1b4bd9ca3e122",
+      "size_in_bytes": 7604
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/fraud.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "2c0fdf34dc94ba539db3b539d2f60e435f5ae6a0635089ca2a72f4c3b945a6b0",
+      "size_in_bytes": 11952
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/gdelt.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b2414fe9a17c77748bc20ab2ba45536bd08b2e55d2a30f9dd046415731c1d76e",
+      "size_in_bytes": 5782
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/gindt.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8a8e40f92c72d5b6be2b8bbe225cd657332f7b6c8f374a694874482db1fd3ff7",
+      "size_in_bytes": 10270
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/gnn_benchmark.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "81b13bddf4a6e39964e3214db737d0a66a15bf6cec2a2937835b32be8e2a20cc",
+      "size_in_bytes": 15961
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/graph_serialize.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f37e5923f3a48dea6a65b1912db3a08884569a076f7d2023124bb89b26ea065a",
+      "size_in_bytes": 8405
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/heterograph_serialize.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "28af11981794ce03d30db4f982f1c6c93beee99cb24266c9940949a141110d55",
+      "size_in_bytes": 3245
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/icews18.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8a8ce7a096f95fe4e2e25f052cbe4b626fa73e4f597eacc18f1afc3ff10c6a32",
+      "size_in_bytes": 4913
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/karate.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0b97cd816c837f23f1a87daecdc71a08694db920c1ab4417fe65fb46360153b8",
+      "size_in_bytes": 3405
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/knowledge_graph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "aefc3078776308cb910920beacdd220f001c8cf593658d79f34670fd99c2220c",
+      "size_in_bytes": 24965
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/minigc.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "52d08bccfbbc25b9822c929a5d48d4f5abab54a17de66b536b2c2bf5e599b278",
+      "size_in_bytes": 7418
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/ppi.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "92367c1e04fff64061de2efec7d80dc54e147db6f6a316d77334afbeece0dc7a",
+      "size_in_bytes": 6741
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/qm7b.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "da9cc50f4c04c06b4521bbf564bc22534058ae9e8c5b6897e549b11e9925977e",
+      "size_in_bytes": 5024
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/qm9.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4ae5f53f2050dc21a4e9096b743262dc62bba23b1479566f0515b17d54099353",
+      "size_in_bytes": 10306
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/qm9_edge.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4aafcc1b60745db7b615c46fc11b47f5b9af18d51863c6e63c7f098395c5d086",
+      "size_in_bytes": 13910
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/rdf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b5777cf9e1301f78987d2fd6908d3e6b3e5e58cfc9143c06995be0c4e9f2df46",
+      "size_in_bytes": 38404
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/reddit.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d142b2c466bc1cf0c749699ce8a18a4db1fe69d48add917fb5c9de1941289cf7",
+      "size_in_bytes": 9289
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/sbm.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fa3c82675d2994f43bc97e21af7c137851fd5d432d6257bdbf68dd955c3aa038",
+      "size_in_bytes": 9203
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/tensor_serialize.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7594300805c83e737fe590c61c9624fe16cd1046223c121d6f303d13c43365a8",
+      "size_in_bytes": 1890
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/tree.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "02e0b0b98b2fbc83bc442d2cb3c9e229e66eb130efe046347bcde80f06e650e8",
+      "size_in_bytes": 9157
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/tu.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "98768b25ea5626d52eed4db0dd9898e8342eb6f14c24d13dbc9ae04faff2f3c8",
+      "size_in_bytes": 14251
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fbbb659ba7ba0ac1fd15269b441a33d92d3adbfe1a522e0400651a3af63b91d3",
+      "size_in_bytes": 11536
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/bitcoinotc.py",
+      "path_type": "hardlink",
+      "sha256": "fae2465456e3fc57711ec6c09768d213639c5058c239375908cb477b55b2b576",
+      "size_in_bytes": 5350
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/citation_graph.py",
+      "path_type": "hardlink",
+      "sha256": "6527053f7a2d84b9cebf52f04fb6da9bd7d1f9cf96c288b9ac63ddef6c258f35",
+      "size_in_bytes": 30611
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/dgl_dataset.py",
+      "path_type": "hardlink",
+      "sha256": "5e010035d523eed63a707f1c3d74853edb18b115be3d930f2606efdf70ee8a9d",
+      "size_in_bytes": 9366
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/fakenews.py",
+      "path_type": "hardlink",
+      "sha256": "0b3f2fafceda6528ab675e048b5d79c65d78f7a63fc5c0d1e29a85d5624e7453",
+      "size_in_bytes": 7631
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/fraud.py",
+      "path_type": "hardlink",
+      "sha256": "dac9c6ef2d6c2e8ee9582bf80a9cc82fcf6391737a1a07db8434995b806f9e82",
+      "size_in_bytes": 12688
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/gdelt.py",
+      "path_type": "hardlink",
+      "sha256": "8b73d0fd7673cb5f7af3bbe05b823bf74b1bb66c6f58b905f650ca0bd1d0da73",
+      "size_in_bytes": 5444
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/gindt.py",
+      "path_type": "hardlink",
+      "sha256": "5198388e11e5a3e40a49efb05d0b2f1348cb8d84341258886db7bea0be5c4ffe",
+      "size_in_bytes": 13647
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/gnn_benchmark.py",
+      "path_type": "hardlink",
+      "sha256": "20fd719c531e589f34e64dac166f054d42b15e194ba746be21ecb6d68d075c12",
+      "size_in_bytes": 16301
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/graph_serialize.py",
+      "path_type": "hardlink",
+      "sha256": "6b9d8e66d5f40a8e718fc3a775a56249a91d9edbb17a8a5f5b4631f7d25c8b6b",
+      "size_in_bytes": 8793
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/heterograph_serialize.py",
+      "path_type": "hardlink",
+      "sha256": "9de64b38efe2e2b95308effc9da2977df17170809c418810d3a909711856c70a",
+      "size_in_bytes": 2634
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/icews18.py",
+      "path_type": "hardlink",
+      "sha256": "bd5ecce78a151f9955fe6ccdbce59b5cec67d68a3cd2e7fa99c48a957b88fca0",
+      "size_in_bytes": 4523
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/karate.py",
+      "path_type": "hardlink",
+      "sha256": "e513c432cf44b1f6f0f23d15255a3ae6911a2117558d4b47fa512d1382a378a0",
+      "size_in_bytes": 2538
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/knowledge_graph.py",
+      "path_type": "hardlink",
+      "sha256": "bea25bb4b3855086e5f2bced22058ff5294fa0d57435a8a89e834c2fb3d92863",
+      "size_in_bytes": 27302
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/minigc.py",
+      "path_type": "hardlink",
+      "sha256": "2f1bcc04b29768658c1776ed8129bf760e4b5d506133092cb7991714c1f8d811",
+      "size_in_bytes": 7009
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/ppi.py",
+      "path_type": "hardlink",
+      "sha256": "c7db8c37486b1c6a73ec024ccbdf75084e35b443d0a3c6a101f735dbd4db0c02",
+      "size_in_bytes": 6742
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/qm7b.py",
+      "path_type": "hardlink",
+      "sha256": "6bbd2201e9a4a1a1b306f257d4cdc334074063fe9e4255f2a6d89a10392e32a8",
+      "size_in_bytes": 4458
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/qm9.py",
+      "path_type": "hardlink",
+      "sha256": "507ce3be2d6120e7aec087f83b1907b13013f704e015ed2afd159fa7e4abe77f",
+      "size_in_bytes": 10135
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/qm9_edge.py",
+      "path_type": "hardlink",
+      "sha256": "3e48d9aec3bd07ab1ad503a9568e3251cb3a46036473a8ea044d0d110571725a",
+      "size_in_bytes": 14103
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/rdf.py",
+      "path_type": "hardlink",
+      "sha256": "a52ae5a442bd84a96a64421c0a0fe587a31453ef13fac6696b596e21a9796365",
+      "size_in_bytes": 42660
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/reddit.py",
+      "path_type": "hardlink",
+      "sha256": "25f154ef3dac6b1483c8ad782be56c681e2a5a7b508a784378d6265fb2fa0cd9",
+      "size_in_bytes": 9097
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/sbm.py",
+      "path_type": "hardlink",
+      "sha256": "11f94845bc4b7ee0bb7df27fe284992557535b0692a9d20b5caf8374562c3be9",
+      "size_in_bytes": 8667
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/tensor_serialize.py",
+      "path_type": "hardlink",
+      "sha256": "e880eaa5bbed5e8e872b954ca03d90fcf41b128c7fea28080ba97e3e8460c032",
+      "size_in_bytes": 1883
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/tree.py",
+      "path_type": "hardlink",
+      "sha256": "0be5a9b50c9069083574b6a56d0aa21c769912b33546f2bf04c7bbb00bd3eaa1",
+      "size_in_bytes": 9473
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/tu.py",
+      "path_type": "hardlink",
+      "sha256": "84f147dc89a9ba17f2d06dcac4d0d0a8caf58dc9f913d8b6b8d709bb5a3a5be1",
+      "size_in_bytes": 16960
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/data/utils.py",
+      "path_type": "hardlink",
+      "sha256": "ecaa61df1f065dc06ae1b03143f01763169928fabdae1413d5cc0d4e242feca6",
+      "size_in_bytes": 11492
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "30a5ce8de0cafdbeaf7f85eee17c6893dfaa1d20514f25ef0a28c6dc7acb7120",
+      "size_in_bytes": 832
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "99b1d619b294c7d6662e9e212d887b119006dfd40ef2a23542d666e78e5a3b6a",
+      "size_in_bytes": 1006
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__pycache__/async_transferer.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f84887ddf26862e7a01cb5b9992ce0b104cee61cbfc1903324a962bb3a04861e",
+      "size_in_bytes": 3671
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__pycache__/dataloader.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "78fa2cf14238339a2f4510c84fde798c1d669c89ea7661ab03981e5d9d7dd7a9",
+      "size_in_bytes": 36128
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__pycache__/negative_sampler.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5a5de303863d4291b8f766c9ac1067035d3f6dcca737c93eaa5c13276957a867",
+      "size_in_bytes": 3131
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/__pycache__/neighbor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "74545b0de67c8ac6ba070982cb603bcb1f8005dce9ccc4445ed9966a5079f353",
+      "size_in_bytes": 6688
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/async_transferer.py",
+      "path_type": "hardlink",
+      "sha256": "382db33942a4bb7b574cd7aa2d8ffb3e2d425e8a68c67dbff891009e0c9fd120",
+      "size_in_bytes": 3202
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/dataloader.py",
+      "path_type": "hardlink",
+      "sha256": "44e3a4ae39011d78952bf560b5e4fbd1cb86f3e02d6853be0f693e0150f19ea7",
+      "size_in_bytes": 38931
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/negative_sampler.py",
+      "path_type": "hardlink",
+      "sha256": "cd690053145bf29cbcfa93fad72e9f36c137d860b37265a9f531b53b26587876",
+      "size_in_bytes": 2312
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/neighbor.py",
+      "path_type": "hardlink",
+      "sha256": "37f065d630005c37d8207c2a0eaddae3c2f85a79729ea0acacac3b0ef877e481",
+      "size_in_bytes": 7302
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "c0fcc9b58018b9cb9c28bfdb591853eca95f1427b6dc7542390702def7f2944e",
+      "size_in_bytes": 63
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8c55449eb67be3f4a510d1867ba61251425cf334c28297ac4dbd53bca825502b",
+      "size_in_bytes": 228
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/pytorch/__pycache__/dataloader.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0731e8b4091462cb572aded0d7e1497d79a4faa32e0f779c6a4e1564f25a7477",
+      "size_in_bytes": 30754
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/dataloading/pytorch/dataloader.py",
+      "path_type": "hardlink",
+      "sha256": "bc33087e7b1442467d48364c742d7f22d43a32da0e7437a0ae7a120dd2f014c3",
+      "size_in_bytes": 40394
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "977e0ae8e6a7e639ebeed3d5b1c28c8eea5f32a238e350baad3bca5999b24151",
+      "size_in_bytes": 1051
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ee20428ad8f8cd96f1122ed1b639dc46b904b636b81ef74e9b864b36ffd72887",
+      "size_in_bytes": 1428
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/constants.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ba7d528d437640b3c05969a68b9a16257b48bd2ab10d212acebdcf6ba1e3fa7e",
+      "size_in_bytes": 232
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/dist_context.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5fff095551bcf50006fa3bf9a81f0ee7786177d46a727a6f91f730c6c57f3158",
+      "size_in_bytes": 10438
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/dist_dataloader.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4c1745922b0318db41397e2a095e3520cf39c7ff84bb699f632093b341dceb88",
+      "size_in_bytes": 5407
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/dist_graph.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "59c57f39644b67b67e64ef0809709717c3c35d0c46221106120aaaf6249f395b",
+      "size_in_bytes": 50420
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/dist_tensor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b880af9335618614a836790e0296886dde1dc84fda971088d1c2d75d7acf43ff",
+      "size_in_bytes": 9483
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/graph_partition_book.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8ab27e7b883f8540c5a643a8aabb08d78273a8af86db4f2d2968703faab833a5",
+      "size_in_bytes": 35201
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/graph_services.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b3c8b1f0be86812d1921a98e07f7c0220fdf9c73e5905f846f6d83752f149ef0",
+      "size_in_bytes": 27124
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/id_map.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b4c7939e87e7d325ab8eaed1098ee8004f2a397cd466938a7bd2d0a11af01abe",
+      "size_in_bytes": 6601
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/kvstore.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e82acc4b0718d207cdd007e6ebda5fafc94f032eb324858bb4914b72361de42f",
+      "size_in_bytes": 41806
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/partition.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4922999ce2776c8f9445b4cfd5c118149bbc8cf4f1330737f0249e28f0513fd0",
+      "size_in_bytes": 28127
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/role.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d76d507fb764fa3d3af65367ba9c384066ec4748da9c91fcb86188b77a6c6913",
+      "size_in_bytes": 6528
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/rpc.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "daef91cb1150c1595920f7e0568ba52e1fa5c00d0e61e4571570a66d191ecbf7",
+      "size_in_bytes": 34832
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/rpc_client.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0defceed172fde5032b984863eefb376cd6dcb782738e67218a7a521baa0c3cf",
+      "size_in_bytes": 5704
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/rpc_server.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "55d1653ac4146a2a9261c699c9a888681b7d3149fe73c4460089d2fd0409be59",
+      "size_in_bytes": 3337
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/server_state.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "6ab7309c55c3d1ffc8e0b2f4540320455ea3f41e12f4a7a323d428158d346d45",
+      "size_in_bytes": 2742
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/shared_mem_utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ff90cca3a9f8876a7dec1ff1f1b53200fc74532d93ba25a91c7b7c557fb5e1ef",
+      "size_in_bytes": 1143
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/__pycache__/standalone_kvstore.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1e70d12f42ac1ca689e088517efcf48685058ed11698f886ae0bfac768be7fb3",
+      "size_in_bytes": 4002
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/constants.py",
+      "path_type": "hardlink",
+      "sha256": "a7e343937548e982c7d9bd8fb5f6916901992ee91e816b7309e0b9b1b799f64b",
+      "size_in_bytes": 124
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/dist_context.py",
+      "path_type": "hardlink",
+      "sha256": "9e367d340d5b2042b539f9ca0142f2208560a29e930811f5cd109d90f0d83a08",
+      "size_in_bytes": 11823
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/dist_dataloader.py",
+      "path_type": "hardlink",
+      "sha256": "d494250b7ba66aa43155ac35bda2fa0382f8fecb842eceee69ae516253c407c6",
+      "size_in_bytes": 6012
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/dist_graph.py",
+      "path_type": "hardlink",
+      "sha256": "754753c1f70ea2714739c437c6d31bba5009af80b28569000aa1f3236eded154",
+      "size_in_bytes": 60360
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/dist_tensor.py",
+      "path_type": "hardlink",
+      "sha256": "202274ef87d4cb9d21682895c5eee5e303f1ea6f3b67a2937e0160881e41f5ef",
+      "size_in_bytes": 10140
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/graph_partition_book.py",
+      "path_type": "hardlink",
+      "sha256": "710ce7f6f1a32bdcee1fa2d569905a7cd6d53e81b42dec3e992181971496fdcc",
+      "size_in_bytes": 39628
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/graph_services.py",
+      "path_type": "hardlink",
+      "sha256": "4ec5cf943d5056a399feb8f126b15827412b3ac7da9958266399f6917b7d7b35",
+      "size_in_bytes": 30874
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/id_map.py",
+      "path_type": "hardlink",
+      "sha256": "c176551ffcf8121156fdb6794192029af4745aa9186326181c46c72bb545b493",
+      "size_in_bytes": 6481
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/kvstore.py",
+      "path_type": "hardlink",
+      "sha256": "37571096141c8033c73740db1558378f03a96bde21dddff59a618b6009187932",
+      "size_in_bytes": 49037
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "628247a022f54ca5a4b93347bbcbdbb38f5d845abe5a492b4804af8f686b53db",
+      "size_in_bytes": 375
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "655f097c8632168a59f6c5d49d3329df2fcc95be2c1cd0941fd8a1ed30cd92c3",
+      "size_in_bytes": 617
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/mxnet/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/mxnet/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "16b045fe63fa56d903cb5683908abc5876c590c72b9b2378a8ca2b121097d11f",
+      "size_in_bytes": 155
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "5e58ae4de1ce0bc4a2ba4a64e1152f2017ed6f3390ef94669cbfa3e9f7380d7d",
+      "size_in_bytes": 90
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "53e68c22ae659a8c2a1abdd415d2d83187e5aa76725f53335a430df887cc52ad",
+      "size_in_bytes": 267
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/pytorch/__pycache__/sparse_emb.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "70df63013bb0a714cfb9d53142085a8cc072cbf2353ba0ed67aeae96501f7a2d",
+      "size_in_bytes": 6653
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/pytorch/sparse_emb.py",
+      "path_type": "hardlink",
+      "sha256": "ba823a18a0cb2143ee1cfa56a53166ce1dbec72ed8fd51ad07e6df0f1d8aae6e",
+      "size_in_bytes": 6161
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/tensorflow/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/nn/tensorflow/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8f8fd94967d2f49a248f97f3bb7a9d711780586ccb303e1d5978078c174132b6",
+      "size_in_bytes": 160
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "628247a022f54ca5a4b93347bbcbdbb38f5d845abe5a492b4804af8f686b53db",
+      "size_in_bytes": 375
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fea56a2252d517798ad926c79a66d8c05ee89d51b14e45088545df358e40c1b2",
+      "size_in_bytes": 620
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/mxnet/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/mxnet/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a866eafdca55804142e5ebde381367dac5ec11dfcf5c87ef20283451ca4e4430",
+      "size_in_bytes": 158
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d219f6d75874ba4ce4bc4369957febccdf6c72951eeb6df5c9178f1cca8bae9c",
+      "size_in_bytes": 104
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "16e81b3932e3b83f962a79fe20afa33927e090873f3f7b5a225f90253daa7405",
+      "size_in_bytes": 293
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/__pycache__/sparse_optim.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d3f02f26967a8fa6561e284bdcd00583e077ad625b1661d76c8024882172030c",
+      "size_in_bytes": 11134
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f5b7577dbf2822fc47ffe54c23dce952c0320821593b0b40aedec30e4a5c9c4d",
+      "size_in_bytes": 1961
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/sparse_optim.py",
+      "path_type": "hardlink",
+      "sha256": "f7b97abb33cae22144d703e2634170bf498fdd21d535002c01fba8f2026f6e4f",
+      "size_in_bytes": 15562
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/pytorch/utils.py",
+      "path_type": "hardlink",
+      "sha256": "7de2016fd0fffafd1a0aaedc0a9190b9e16f705ff44f0d1cc72ce180e9e3b70d",
+      "size_in_bytes": 1854
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/tensorflow/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/optim/tensorflow/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "eacc9b9911cff4285d0ecff66b9e79efc585e1dba625112cf32b0b2d31151a03",
+      "size_in_bytes": 163
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/partition.py",
+      "path_type": "hardlink",
+      "sha256": "c6383831643e6edf23344c17f64f645676abe3a96869e4bddcd0cb390033f310",
+      "size_in_bytes": 42180
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/role.py",
+      "path_type": "hardlink",
+      "sha256": "15dee2e5cc56c963f9f9d5c9a5956576ff2799a31ce7c0abdd2d353eddd8aed8",
+      "size_in_bytes": 6851
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/rpc.py",
+      "path_type": "hardlink",
+      "sha256": "c054a2bcc9924816e35c9606b6fb7b727c3d508b40b1f86ff3f35b31222ffea6",
+      "size_in_bytes": 33735
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/rpc_client.py",
+      "path_type": "hardlink",
+      "sha256": "e2b9350eb4d44966c4b1c0abdc83be932b03deecac1eb999e4915f5aae0d9fdf",
+      "size_in_bytes": 6872
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/rpc_server.py",
+      "path_type": "hardlink",
+      "sha256": "73a65a0e9145be5519205c96f765386c26fdd1e6bc0dc04ddebcb4121cdef948",
+      "size_in_bytes": 4380
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/server_state.py",
+      "path_type": "hardlink",
+      "sha256": "481a175c23995448a598cae5605b12a7f980b5bd793578775aa9e0e359412eee",
+      "size_in_bytes": 2249
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/shared_mem_utils.py",
+      "path_type": "hardlink",
+      "sha256": "d54bcf13d3e27c31c7026123c33235a04352bc43aac9621855d07620d6c45580",
+      "size_in_bytes": 736
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/distributed/standalone_kvstore.py",
+      "path_type": "hardlink",
+      "sha256": "3b977fd3fcfd61af26be0e10b8f7676012ed25aa0c97528f7f1f95e7b2dab49b",
+      "size_in_bytes": 3255
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/frame.py",
+      "path_type": "hardlink",
+      "sha256": "33844ae9ea7be63104b17348ab8b682f5355e75b2639a2dbc732d914ed47bc8a",
+      "size_in_bytes": 21422
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "c512a81a60bec2a75f03ec70cad12261929dbe10cd2bbdff94b1cbbffb2700dd",
+      "size_in_bytes": 169
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4f2a902f6ff9e9fa2fb2151ef5323b55c1c19c57240091489e99022c04e05573",
+      "size_in_bytes": 294
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/__pycache__/base.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0e8c29fcf58d14a7b91034c62db65352541bc4a5061247ccb3d91eea26c965b9",
+      "size_in_bytes": 1057
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/__pycache__/message.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8bc414edf364115319f93b9bec278a52e7335f632174603766703363c0995b07",
+      "size_in_bytes": 8478
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/__pycache__/reducer.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c80407db539044432f58c24cfa93eea909dba26cc0a278053aec02d490cf9f26",
+      "size_in_bytes": 3209
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/base.py",
+      "path_type": "hardlink",
+      "sha256": "9457f47b440b1dfbc1a11971f52b8a71c5a0e3c7374ce496be5f9a9e53c54603",
+      "size_in_bytes": 602
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/message.py",
+      "path_type": "hardlink",
+      "sha256": "af981f8dd8b887926c217be4f383449493f1f22620006ec5767239e846980e2e",
+      "size_in_bytes": 8819
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/function/reducer.py",
+      "path_type": "hardlink",
+      "sha256": "fa5edba4a39a95fafbb4fc39d7e1d30d2ca9935e98b371f41f1692782883ea05",
+      "size_in_bytes": 2740
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/generators.py",
+      "path_type": "hardlink",
+      "sha256": "88fefca91161fa0c188f7cca1a2ccc238136e2addc0d007d305e2894d72b14fa",
+      "size_in_bytes": 4334
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d90fc14325b3b5ada3d8441294434244095abb3f93194f5fbfea3fc5e353528a",
+      "size_in_bytes": 329
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8ea4929d7a912a712d2ffee43ca33c90338260a8971ebdabfcf18ab8a97cb2d0",
+      "size_in_bytes": 482
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/__pycache__/capi.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "68964b395cbd2e15ce5e1ebde75990e421ff511eadea65ac85c970de0d62fea1",
+      "size_in_bytes": 3698
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/__pycache__/edge_coarsening.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c64df71478479710606827899c6cb129719b219961fbab3e948e58e5e5ac384a",
+      "size_in_bytes": 2254
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/__pycache__/fps.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fbdc786273a4d90b329a313976c2a15c8a1d9c7ce0e992f0f1977d7c9aa78e83",
+      "size_in_bytes": 2073
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/capi.py",
+      "path_type": "hardlink",
+      "sha256": "1574b204911c60a84e7a59acdf8a786063fff7fad418aebe378cb3b0ff443cf3",
+      "size_in_bytes": 3972
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/edge_coarsening.py",
+      "path_type": "hardlink",
+      "sha256": "6fb1c799de68370f9a515a0b873c3aba8d8c0a8e4288a7dca5658505d6cb6a54",
+      "size_in_bytes": 2273
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/geometry/fps.py",
+      "path_type": "hardlink",
+      "sha256": "a525c73b4b8dec300cc665fe25a55f30a1309cc9b1a10f565001413d09362359",
+      "size_in_bytes": 2118
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/graph_index.py",
+      "path_type": "hardlink",
+      "sha256": "9cc455cf9197a3549e30f4c697a9160b897555a9af780dd919274a64e347129e",
+      "size_in_bytes": 37449
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/heterograph.py",
+      "path_type": "hardlink",
+      "sha256": "5068fbd2cddcf071825e0c1f45cc471e8a4ac6ac704fb12c57162bd22c2ae5b0",
+      "size_in_bytes": 239497
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/heterograph_index.py",
+      "path_type": "hardlink",
+      "sha256": "42e6ebafe2909d73058093cbdf6c61db435272f93ced79485019f422dd6fd409",
+      "size_in_bytes": 41715
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/init.py",
+      "path_type": "hardlink",
+      "sha256": "c5fdf7a7c06529a9ec83f3d4fcb7420f398ef8d86079b6fe8fdcc8aa899b12df",
+      "size_in_bytes": 1809
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/libdgl.so",
+      "path_type": "hardlink",
+      "sha256": "5862c9dc15e78873b8165604f9629b0551b490470eab0c604a60525b725087de",
+      "size_in_bytes": 548516344
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/multiprocessing/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "974cbc5d2145baf758bf0bb454f7617560e635d3c0669624b8ec2a8a80a7ea69",
+      "size_in_bytes": 727
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/multiprocessing/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4fcf530fa78b766a0815d74ae8a8e71ed8af2da5bda7132271131b2e2c4c3ef2",
+      "size_in_bytes": 421
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/multiprocessing/__pycache__/pytorch.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "67e1ca663f597afa77dc4218a2390501783fed70c16d71d58d7df7776ced08fb",
+      "size_in_bytes": 1684
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/multiprocessing/pytorch.py",
+      "path_type": "hardlink",
+      "sha256": "23f6112a16bc14ecafc4288b08cfefa563e6e7dca344dfa9b324674e2aa69fc0",
+      "size_in_bytes": 1303
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ndarray.py",
+      "path_type": "hardlink",
+      "sha256": "98f6ece561da9351c310dbc8d0f58c897c0ffb4aff8b42f769a93e28187d44d2",
+      "size_in_bytes": 5201
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/network.py",
+      "path_type": "hardlink",
+      "sha256": "e1e0e4ddbd638b335ffdf39b38dbebc45efe80e3e293bc08f31f0dd821006647",
+      "size_in_bytes": 11062
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9f7ae62373cb235c8300cf5ae69530d2fd71eafb221617bd0413d4e7aaee8ecf",
+      "size_in_bytes": 1366
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "98db124bbdf847ff43e2181f4bd28890e577b84b07d1ed254755bfdfbe829807",
+      "size_in_bytes": 1463
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/functional/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "003a739cf9e53fe5c9bfe162bd6e765da514d6fa98d8de600e36657845491fb4",
+      "size_in_bytes": 76
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/functional/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "80f8a15d98762d9aa993b21b43f2cd3d84baebb19facfe4eef5f4bf39f28e365",
+      "size_in_bytes": 241
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "4d61085dbf7cac8d73c2af45e4f5bf38809f9733228a61b1c763000f6c9322dc",
+      "size_in_bytes": 160
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "20e677d95afcde51782822bef29ac90278b25eb7a1931bf106b0269956fe561b",
+      "size_in_bytes": 312
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__pycache__/glob.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "931ce338e5e384346253fd4d33f4a0accd53f1a4b59566d76184c585b2eb7c67",
+      "size_in_bytes": 9925
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__pycache__/hetero.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "253037e4510ec66d65989464363916b1a02179f69c8426136c350e7b8f7465ae",
+      "size_in_bytes": 8434
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__pycache__/softmax.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "56445c45c8d397d62083d7a8670d68616cea86bdcbdd8db101da954e085ec511",
+      "size_in_bytes": 244
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7ef7e6ff8d1f706b4ca85be10cfe66e97622055582fa38b8cb8fc1bd27223d9d",
+      "size_in_bytes": 8135
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "adc9444d370f813b02238dc28f68f273fd68317ae1f1ce7fd5e7734796f03530",
+      "size_in_bytes": 942
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "06bbd18b6cc12cfb7b99bc5a030d65f1e4d4ade817705c8919261d3cfdf9b628",
+      "size_in_bytes": 1045
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/agnnconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c271fd6fb97117e5c7490fcb1aecc738610bb16b90d637eac75875639b731f11",
+      "size_in_bytes": 6176
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/appnpconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d2f8a38c79ab0addc48b368c12a933e729e5d08de7cbff145c36edda5ef132c1",
+      "size_in_bytes": 3889
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/chebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "2f89128fc5d487fb53d37ca0c9c99d69078b52926c783a94c2d9e3864cd732d9",
+      "size_in_bytes": 5029
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/densechebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a60fd5d4440fb409489470f91f22d2162aa444507cc4ed3a9ff8c8f77aed2277",
+      "size_in_bytes": 3600
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/densegraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7dafdaf5c3e188d156303d5c68d010bcb95ccb692908a3c0bb88a43846c77209",
+      "size_in_bytes": 4174
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/densesageconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "615f78922bd8340f4eb03a7e40a2f64a193a58e58cede354d7b6380f71479b38",
+      "size_in_bytes": 3846
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/edgeconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8c6665b1e6e44e2eba900c2fbd61835ae9e9ab722b600e34d8e4fea669325b22",
+      "size_in_bytes": 6814
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/gatconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ef72d44f29234566ca7d92666156ecff7ce988c6401c79eb64e6cf2deb8c1126",
+      "size_in_bytes": 10536
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/gatedgraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c95f3bc53dabc1349e91e8b829a556a7bb1e6a3a278908bb774a44c625041ebf",
+      "size_in_bytes": 4961
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/ginconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3a23107ff9271f3df027356ea3b8104c70b26fc8d9e77ff4fe8044d9b4038876",
+      "size_in_bytes": 4726
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/gmmconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d34d0f26c9d819cede5bb9dbb7b1b0deadad4465aa20d4563257e1696b646f06",
+      "size_in_bytes": 8763
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/graphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5f9d5cba4586ad43d45eb4cda506c928f47821dcceef032288e960a6d92154c1",
+      "size_in_bytes": 10297
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/nnconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e5f853bfc9eac51619b7751d919d766859b20103ffcf9d6269074bd1e730c965",
+      "size_in_bytes": 5710
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/relgraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a4e54ee91114608122bfde334dd7f4326fdbb9f15d8f5cbe8236d0a57d7ce2aa",
+      "size_in_bytes": 7931
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/sageconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b95383f1807bc47ee56b702ce4c9f0e0cde3e80d9da3005ee7161d8be8481248",
+      "size_in_bytes": 6375
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/sgconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ad95760077d53c32d58a9c0598aec7face81f4b92d07febf43d30200a8c2d8c0",
+      "size_in_bytes": 6630
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/__pycache__/tagconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5bd51d96df2f907eac09f66f845b34b694e88a93a9581c26bfa003e79b1a07ad",
+      "size_in_bytes": 4146
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/agnnconv.py",
+      "path_type": "hardlink",
+      "sha256": "7ca942f5958e623ced8bbeb7b773d77077c621e53441dd944d54a1e4fc8b5b65",
+      "size_in_bytes": 6396
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/appnpconv.py",
+      "path_type": "hardlink",
+      "sha256": "63e1926f6606232bd928b0a632667021eb1e449f1f9d1c3358f2addefc27aa09",
+      "size_in_bytes": 3796
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/chebconv.py",
+      "path_type": "hardlink",
+      "sha256": "553ae25f48d54da4a379547a8d6d0ce49aad29049e7862323e134ac681c2de73",
+      "size_in_bytes": 5979
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/densechebconv.py",
+      "path_type": "hardlink",
+      "sha256": "e226e26dbb14e2daf1042082c9c96273f48c3eee04e6f9fa299cf966c27af419",
+      "size_in_bytes": 3686
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/densegraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "0836c86226455d3b51f2e70eec42c3c0fb7a28c73aa15b9892b6eba962cb7afe",
+      "size_in_bytes": 4758
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/densesageconv.py",
+      "path_type": "hardlink",
+      "sha256": "cdae67d105c9acf85fea1c5edfa88cefd711f09fe700c263ae600eaac5d6f502",
+      "size_in_bytes": 3849
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/edgeconv.py",
+      "path_type": "hardlink",
+      "sha256": "ee2b6284c91967c02d13b6df659d11310fbf64fa3094d5ca550ec4bea2ba230b",
+      "size_in_bytes": 7150
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/gatconv.py",
+      "path_type": "hardlink",
+      "sha256": "ab148faf61b1a86057c41518d5a39e44e8d57606a078548ccff22aa59ee36968",
+      "size_in_bytes": 13768
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/gatedgraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "5b29e8a1e7793cf1937021759b3a9759fc2abc4b00ad2f687e9709580a3c4efb",
+      "size_in_bytes": 5013
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/ginconv.py",
+      "path_type": "hardlink",
+      "sha256": "f6b881ea7af7585c22379a17be58c3f4f99a7493eed178133a8c26e47d7bf8b7",
+      "size_in_bytes": 4713
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/gmmconv.py",
+      "path_type": "hardlink",
+      "sha256": "462b865bbee533b08ec6d07bbbf7c5e9265a1ec64ff34f649d666e655953a60e",
+      "size_in_bytes": 10106
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/graphconv.py",
+      "path_type": "hardlink",
+      "sha256": "d003bedbba65a2a461134303065f54626345d0fedb354e2a274838913e44fdf5",
+      "size_in_bytes": 11981
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/nnconv.py",
+      "path_type": "hardlink",
+      "sha256": "581c1ddeed7cc2ba185de728b397bf9cbd0879f1575aa5c8364b9e80fc1fc7f8",
+      "size_in_bytes": 6254
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/relgraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "dae811f6347e6d7e53dd617ea74fa9cb17c4806c511bc0addefcd42e82f940b1",
+      "size_in_bytes": 9722
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/sageconv.py",
+      "path_type": "hardlink",
+      "sha256": "4a7d56f877a26f47b52a2f788e4101a61e3a6057f19797b694a3ce9b8f3db5bc",
+      "size_in_bytes": 7858
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/sgconv.py",
+      "path_type": "hardlink",
+      "sha256": "a55d9fcbe6b71cee607d2d286e374deec16ed7f1f07751f84d4aa42b37505bf3",
+      "size_in_bytes": 7168
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/conv/tagconv.py",
+      "path_type": "hardlink",
+      "sha256": "18983897cee7ccabfde12da09622119a440a2272f6afbd8a6e69a416b817e8e9",
+      "size_in_bytes": 4259
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/glob.py",
+      "path_type": "hardlink",
+      "sha256": "ea96f26a6dd63c9de257c04926fe330e81ecfada4c5202a09b5b643a99488834",
+      "size_in_bytes": 9124
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/hetero.py",
+      "path_type": "hardlink",
+      "sha256": "818a25a186541471277c2748810470a42386de55bc211d0bfd3336f25b2ba33e",
+      "size_in_bytes": 8948
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/softmax.py",
+      "path_type": "hardlink",
+      "sha256": "6557947ca3bf0d893de421fb30652f483886ebfbe3d712533f097284b92f12cf",
+      "size_in_bytes": 116
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/mxnet/utils.py",
+      "path_type": "hardlink",
+      "sha256": "0d915d613ba0620e89a651221f4e231d78097a95b7f681bdb061f1faf4e232e8",
+      "size_in_bytes": 7764
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "2625d5d160467e7d62b2cb7a9ba921916540b71aed6bc9b62fb48498c32c0ef5",
+      "size_in_bytes": 236
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cf1779488daed71374a26946c48f62666beced382cba5b6f736d8c5ae6612c19",
+      "size_in_bytes": 405
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/factory.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7474700641631eaee8dd501a646dfa175180c99e2f70d15e32595cee2316c5e8",
+      "size_in_bytes": 9869
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/glob.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "54916f149a90bc48465d4ef65b179e09384bded46a76c3462fcce06a442e5dd4",
+      "size_in_bytes": 42793
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/hetero.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "2c4457a6308301c0c14026325194444851e24cfcfd37406193d3913c19d23e3c",
+      "size_in_bytes": 8840
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/softmax.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "743fc40bacec2e01348ebe554173aa9f2925bcedbfeefca76e769a111cb90ebe",
+      "size_in_bytes": 248
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/sparse_emb.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "58f9f3e84f8ddf9694023fc49e4363f2c3c33cdf1c2b799585e212c650ef5920",
+      "size_in_bytes": 10881
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9cee29592f5ee4b3645e6def51591bb7303c7b36885ef32a1dc61ef5f4cdf8af",
+      "size_in_bytes": 9487
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "1ece2d7cd8d99a852591dd02d63845812d5fcc25de96c687daca8a9ed516cf4e",
+      "size_in_bytes": 1274
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ac59d6642bdc014bdb602b58fa2511b58af795ea79979730dd64669fe53009d2",
+      "size_in_bytes": 1358
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/agnnconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "352536e41d40ca0917dbd5433c2c78912af568b5b54453afaa458776e5b25201",
+      "size_in_bytes": 6145
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/appnpconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b249b74ee7f0955ba31debe8ccfb50646ba67e755607fe1882bae3e54631022e",
+      "size_in_bytes": 3708
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/atomicconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3d4d5e9516c8a14270ee85cabfc69cdd12b6301d9f7e1f0136f366766c9e6d6e",
+      "size_in_bytes": 9313
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/cfconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "75196aa4cc494137e150ea1b05142dbdeba4d5ef91e2abf6483a9c203f6cf136",
+      "size_in_bytes": 5306
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/chebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3e4c9bb622518a019e5881067edceba90621e5165c3c248e071a6567060d155d",
+      "size_in_bytes": 4766
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/densechebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f312d67487fcc183c411430553a4677a3d643f3ab424e488d1e5183b5c08fe89",
+      "size_in_bytes": 4351
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/densegraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ccdc32decf315da3b9244776b21eaba2a2b8ce47e7b5f672a600256afad2ea8f",
+      "size_in_bytes": 4914
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/densesageconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e10df36a6547008700fec659d92831219afa8c64ebd475f43c6750a67c28bcd1",
+      "size_in_bytes": 4777
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/dotgatconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d0ebbb11a18086529815b39db42f8698cdda79d5e56c6b719c1c4d4461e3ed68",
+      "size_in_bytes": 8277
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/edgeconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "edc0bea35428f26cf1cf6ac6f23934815a52ebe7527229deb68abdad57550fd0",
+      "size_in_bytes": 6529
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/gatconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9c7c66e7afe6e24acfbe6ede3c842fa58bcab80eda05b67f740ebf4580f0a715",
+      "size_in_bytes": 11193
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/gatedgraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "10401992019e2cab24aa0aa04623acf153076e526e7393f9b9b7815dcc5c1558",
+      "size_in_bytes": 5995
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/gcn2conv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "47b5b740c769c9a37355456bfb1279b7873cf1a78df23cd646bf75c3cc638d28",
+      "size_in_bytes": 9189
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/ginconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ef33027f1654083b12b8bdcd4eae692de0ffc591ac5693cf241e1ccb8f5211bf",
+      "size_in_bytes": 5195
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/gmmconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ab361a4c46ad72847f763e839deb5b37a0822f1bfa875d7180bed44445545c80",
+      "size_in_bytes": 9120
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/graphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "82e88e8801b56fb51fdc3b950a27eef34b9bf0dc8ddf888b520a3bd3023b3930",
+      "size_in_bytes": 16200
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/nnconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f554a777d09d44947a6cf28bad6070b361803e026950ba5bc43d868083245362",
+      "size_in_bytes": 6130
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/relgraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1a092e9af9dbbe5f39239a6be3d9a3fd00b6c906cb9b14b13554e7613c930413",
+      "size_in_bytes": 12005
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/sageconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a8a805486a9a1391866c44756fbc96d126d5653569330c1087e235b0a8eae95c",
+      "size_in_bytes": 8893
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/sgconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fb16c9d8d66277fe7f7404b43831d25ea49040998a947819ff3eb1b4738aa7c1",
+      "size_in_bytes": 6890
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/tagconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7543438a7428e398e9af4c09c25ef1fb4082dfb279367de19eeac63fa758df5a",
+      "size_in_bytes": 4285
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/__pycache__/twirlsconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bf6f7fab47f46a103d1f9581df1afd36d915c8311f382073c4cf665c101329da",
+      "size_in_bytes": 17617
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/agnnconv.py",
+      "path_type": "hardlink",
+      "sha256": "747437bf0d8f6ac862f0ced74df54459ce4a8f9a9890ea3d0dda4f1c2cefc328",
+      "size_in_bytes": 6326
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/appnpconv.py",
+      "path_type": "hardlink",
+      "sha256": "deb8fba3c49ac7df737e7807d38c9954fffb5e7cf2d379f14899e0a934d9e732",
+      "size_in_bytes": 3768
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/atomicconv.py",
+      "path_type": "hardlink",
+      "sha256": "cf10364d1dffe72c6a57868b91d67477a3bf70ca9865f700642eb9b565b5f3eb",
+      "size_in_bytes": 9914
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/cfconv.py",
+      "path_type": "hardlink",
+      "sha256": "9be51989767c23b173c50b22a238880ca33cb5679ae567f36964d53990890df2",
+      "size_in_bytes": 5013
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/chebconv.py",
+      "path_type": "hardlink",
+      "sha256": "49c4b8f0f4da1af4ee95a962798e87cea68d107265d79845c69f61af544c8b4a",
+      "size_in_bytes": 5287
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/densechebconv.py",
+      "path_type": "hardlink",
+      "sha256": "b756408438d80b229b59704d816dba574065b68eb4d6c85a58e41ea8766939c7",
+      "size_in_bytes": 4257
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/densegraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "0ccb90bd583775875b553ba8f7aba3b1b11c73d87bcf028ba19c40ca246e9f6e",
+      "size_in_bytes": 5300
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/densesageconv.py",
+      "path_type": "hardlink",
+      "sha256": "f5b9741450cffc5351a42d49c73e59aa8c59c2f77bbc7f3b4832a36d034173ed",
+      "size_in_bytes": 4728
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/dotgatconv.py",
+      "path_type": "hardlink",
+      "sha256": "cecab7680ea8542527f610e140298cf50a1154367dfbae3a10cf66e8c5f64377",
+      "size_in_bytes": 9161
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/edgeconv.py",
+      "path_type": "hardlink",
+      "sha256": "e307aee158da54a89f8a1ac0802289cbec48f259143af8aa3908f3421a93d67f",
+      "size_in_bytes": 7919
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/gatconv.py",
+      "path_type": "hardlink",
+      "sha256": "3cdd152515e54e6b5541b741c5ddae967296831bd2499601562aa09e5e82448f",
+      "size_in_bytes": 14292
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/gatedgraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "2abaa2d35d2c1e6cb55cab5fda28c6dedf9494f5c19ced972d6ae46ac1173332",
+      "size_in_bytes": 6103
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/gcn2conv.py",
+      "path_type": "hardlink",
+      "sha256": "b0e69cf46e9d4bc867a9d239cf62a7d06afe4e610a2a431e55d3d46c2e348797",
+      "size_in_bytes": 10202
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/ginconv.py",
+      "path_type": "hardlink",
+      "sha256": "6ad9977ceb9e12da60793af1d7dbee39671f127d730f63e8763da7ef42899713",
+      "size_in_bytes": 5357
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/gmmconv.py",
+      "path_type": "hardlink",
+      "sha256": "7cf8ef79f56fb98e89544bff434da68b006a4ffe52b363dfe641372e37ae097d",
+      "size_in_bytes": 10074
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/graphconv.py",
+      "path_type": "hardlink",
+      "sha256": "f97721bbb3745cd0ea33f96f33a8c34c7db386e7171e6b24c8b34e830cc15d3b",
+      "size_in_bytes": 18372
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/nnconv.py",
+      "path_type": "hardlink",
+      "sha256": "b3046511c186e1802e3c963adceb5fff28949b3ac10df9f20c7e88042914964f",
+      "size_in_bytes": 6510
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/relgraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "3c316bb47c658b3a231e9da2b0739831c0f9a079aa6009c2feff52d18b2b032e",
+      "size_in_bytes": 16334
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/sageconv.py",
+      "path_type": "hardlink",
+      "sha256": "336e38f450dd81e2545460e7fd9916c01c3c04f9cc34ebbe1cfb94d90912bb19",
+      "size_in_bytes": 11260
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/sgconv.py",
+      "path_type": "hardlink",
+      "sha256": "0c45561d69ae65050bab052a7e7417cb073660cba1cb6eeb23b6655c68898d25",
+      "size_in_bytes": 7396
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/tagconv.py",
+      "path_type": "hardlink",
+      "sha256": "61f546e7d7b80e72693363320c7d6e37d598484a2fbf743452a25830333a2c39",
+      "size_in_bytes": 4190
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/conv/twirlsconv.py",
+      "path_type": "hardlink",
+      "sha256": "f5ce5789564375c0cb6676088d1963d0bddb86cb34570abc56e08192e9dff0ca",
+      "size_in_bytes": 19828
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/factory.py",
+      "path_type": "hardlink",
+      "sha256": "becea29fe04a4236f865b162b2ef525628aecf7aa3162fdfcf8d39c42a28667e",
+      "size_in_bytes": 9210
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/glob.py",
+      "path_type": "hardlink",
+      "sha256": "eb94c3d921ad8b419cb502cc5a49b87181c3a9b1a99bb118e54db628d5651008",
+      "size_in_bytes": 43733
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/hetero.py",
+      "path_type": "hardlink",
+      "sha256": "8515455f589de5281109b4474ce4eac1f0b6223df17db432fa5fcfdc7a8c61ab",
+      "size_in_bytes": 9120
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/softmax.py",
+      "path_type": "hardlink",
+      "sha256": "9ce05036b76b1b2c4f6fd1ae35ab4a464a1ffc59d10085cf9d13702b4ea669be",
+      "size_in_bytes": 118
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/sparse_emb.py",
+      "path_type": "hardlink",
+      "sha256": "dc21e75595e02b54e46c8d53ca062bec80e34d7b9388a9c61ed66af6cfe831f7",
+      "size_in_bytes": 13218
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/pytorch/utils.py",
+      "path_type": "hardlink",
+      "sha256": "6936b2b370be2b16da157f7348c82e99a93370930c8c643141546325560decc6",
+      "size_in_bytes": 9276
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "25441187d22c9d8e72c9beef94c45cdc4d7ccbb1db810d312698f18abbc9ea89",
+      "size_in_bytes": 156
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7a99659c3de3a5b6d06a1c254e3f97c094241b72800226c218523c1c4ce5d6f4",
+      "size_in_bytes": 299
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__pycache__/glob.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "65842381acc1449a0ddad9b7c961b361a4a0ecee71d912959c907d45e9b78f36",
+      "size_in_bytes": 8131
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__pycache__/hetero.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e30cbca8fd1fe612359a8bcda89a71d5537b58ba32e43a47204c1486ff988fe1",
+      "size_in_bytes": 8084
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__pycache__/softmax.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9e650a2e8b015448b24f8cec9a407931f3bc3ac4883a05ffafaa66db11aa4d3f",
+      "size_in_bytes": 248
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7de3dcfcada259dd75fc7ff6013e2ad780d1ec61db468834e48d29e0247bc817",
+      "size_in_bytes": 2784
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d2e93571418aa438e6ef9b5e97cef02136001ec66eeda0ae104b24b467485b6d",
+      "size_in_bytes": 348
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a08658a49ec58ab4676cd0aa12eba431fd1166d7cde8d6c341aa48da05166452",
+      "size_in_bytes": 611
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/appnpconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8dd57aa674606f651ee73963e52b6e5be98b1d5ea05c02cc00f914a3ad566b38",
+      "size_in_bytes": 2589
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/chebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7f1be26af85b5955756450af8c05791f2fee2875c70aa78e96091a0b32db9ff1",
+      "size_in_bytes": 4940
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/densechebconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7556111138474f44094ee086ff7c7ff938b0bee73a06ce581e56b6fb994c50a6",
+      "size_in_bytes": 3490
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/edgeconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "18adf82883cf550aa5c268ef4e98eb5ecabdfad0973f5690a5a3a8f93603da0c",
+      "size_in_bytes": 5573
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/gatconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "532f757ca5e6c65b1b95876977f0eaf4a502c0913fc7322eda5d7f4e0ba416e8",
+      "size_in_bytes": 10691
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/ginconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "71f043f2318cc11b71515fa5116b0e4afe98f5ec62a99e6d72dfc7027d0b8eb5",
+      "size_in_bytes": 4732
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/graphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "36348686c42e227a24ee107a647e47a4a4ba3e30d57d75fc19a95862b9d7d79a",
+      "size_in_bytes": 10650
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/relgraphconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3eff718ba9b4214db0e55adf64060a4938621ad489b4d4e7398f4cae04f7baf9",
+      "size_in_bytes": 9056
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/sageconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "dd30ae4fb109b72ebb29180c3658ba888e11f1e74085a377ab1ced2d52d615b9",
+      "size_in_bytes": 6766
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/__pycache__/sgconv.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0a6684c9b4d296a9f83c15cc6917b317acfdee00eae40243b289a4fd909c6884",
+      "size_in_bytes": 6642
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/appnpconv.py",
+      "path_type": "hardlink",
+      "sha256": "c5863a604a65b9e86a66fcfdae25af2ca84ead4b7edab8c43cd7af147a003dde",
+      "size_in_bytes": 2563
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/chebconv.py",
+      "path_type": "hardlink",
+      "sha256": "bd525a2ba3805eeb6f17dec9a5c57ac096122fd04e229ac954de260a676f2c8f",
+      "size_in_bytes": 5596
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/densechebconv.py",
+      "path_type": "hardlink",
+      "sha256": "da0a5882b9dedb79b66c92b09e6166d0ba39021c586db693949816534ddf1a7a",
+      "size_in_bytes": 3716
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/edgeconv.py",
+      "path_type": "hardlink",
+      "sha256": "533171c0741879aee16de60d05a3adb867e7f0acb051d8f533cb35d002d9b92e",
+      "size_in_bytes": 6037
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/gatconv.py",
+      "path_type": "hardlink",
+      "sha256": "ec19c40685dc39e12116df42f84ff9b606045511055ec120adebf30778eb5c3c",
+      "size_in_bytes": 13405
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/ginconv.py",
+      "path_type": "hardlink",
+      "sha256": "72051052b64db61029748d99cbcf28eb7cce1d01a68f315e1770fb06010a3e2e",
+      "size_in_bytes": 4685
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/graphconv.py",
+      "path_type": "hardlink",
+      "sha256": "4220ad95fd40826d465bc45cc16bed2803eaf42a2064263aa91f064423da55f0",
+      "size_in_bytes": 12444
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/relgraphconv.py",
+      "path_type": "hardlink",
+      "sha256": "8da220d007f76e819f99089bd9e67cbf888113cdd2c35d7ed5d6051a66d26d97",
+      "size_in_bytes": 11919
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/sageconv.py",
+      "path_type": "hardlink",
+      "sha256": "1c57d353b84d897374a70f7a199004da431b0c944eb7ab8b3be26bb9f8d85e43",
+      "size_in_bytes": 8041
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/conv/sgconv.py",
+      "path_type": "hardlink",
+      "sha256": "8aa545a669ab4fea98a75736f577f3a5e706b628ba738991b546d23332ac3834",
+      "size_in_bytes": 7195
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/glob.py",
+      "path_type": "hardlink",
+      "sha256": "5982926a302c29a98f0fa9a17a265a471e256eb15bdfc9c5264b15edbdbf96f4",
+      "size_in_bytes": 7220
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/hetero.py",
+      "path_type": "hardlink",
+      "sha256": "854871a4a0550e1b09e0d8f11b81156f1dccab209f17a67e6f1a2996856f0cbf",
+      "size_in_bytes": 8607
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/softmax.py",
+      "path_type": "hardlink",
+      "sha256": "590e6e2e4ce88641ac97c746fd8a9c555e95c46c2409eaf430822c94e791bb56",
+      "size_in_bytes": 115
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/nn/tensorflow/utils.py",
+      "path_type": "hardlink",
+      "sha256": "46cbfc7294b918972e3b05ba08212c57d8387237a41e6765ddc1facd5ce03a02",
+      "size_in_bytes": 2468
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "60305dd96e16ccc9817470a29324c13efe99ea8a15830a169514d6210ccb7874",
+      "size_in_bytes": 119
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4230b49953e4013db1e6a39036e0499044953dfc00d259cf309abfc1c3c11722",
+      "size_in_bytes": 256
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__pycache__/edge_softmax.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9eacd63cb08a45965f41e3a714ca7ab30b25df8ca9b947be6a0196fccc762d0f",
+      "size_in_bytes": 3781
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__pycache__/sddmm.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c8f9a47e1a03098ce6e3455f7a57966dc1be90996970e9b3ae287ebcbdd96ba8",
+      "size_in_bytes": 6173
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__pycache__/segment.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cdce8be50869a86ebb2a736b49db618a0e73652dbf06446595ff7e6d32ecbbf6",
+      "size_in_bytes": 3113
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/__pycache__/spmm.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b62bd67f305cc59eb64e5c72f5952c4b991cbb2faf1016e8a2c7bbb353f369ab",
+      "size_in_bytes": 6613
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/edge_softmax.py",
+      "path_type": "hardlink",
+      "sha256": "6818ad03766f4b746a6e192658cd9236538f642d31de68142446a221f8bcf3eb",
+      "size_in_bytes": 3653
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/sddmm.py",
+      "path_type": "hardlink",
+      "sha256": "e77548bb68d6546ebfa170e5ec1df97c5bb5e9b0b0c8d352c83979d3410b3137",
+      "size_in_bytes": 6687
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/segment.py",
+      "path_type": "hardlink",
+      "sha256": "a6355eda6610d85edf57193cf587a96880a10e4b4772ec10270950590319b764",
+      "size_in_bytes": 3084
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/ops/spmm.py",
+      "path_type": "hardlink",
+      "sha256": "bf3b7329bc9d6526179e936669deace8726b16b114441d021ea983fc6281c93f",
+      "size_in_bytes": 7465
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "22a5f2c33f9b5080bdb7eb802c260fb4e3ad1a5fc150718b913c15a0831c4c9c",
+      "size_in_bytes": 361
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ccac5fdf54940cfb8c1690bfa09dc04f438de48282a2713bee4756ab6a5268de",
+      "size_in_bytes": 596
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/mxnet/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/mxnet/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "dbf119565d951fa77e638cad3dd3060bf7d8859e07f6ae44b6d849e4a0c96885",
+      "size_in_bytes": 146
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/pytorch/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "5d6a5be1f8ec20f1916747d9983483ede56bc2bdd8ee21f62c0a65610c4593f9",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/pytorch/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4a88860a5b1c48bd7940b8e6fc5731aea7fa7088737757805e57cf52c6ee8534",
+      "size_in_bytes": 269
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/pytorch/__pycache__/sparse_optim.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fc3f6b24a827882389a688f52324553a2e69c832386b65c94551c9b0066d0507",
+      "size_in_bytes": 15717
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/pytorch/sparse_optim.py",
+      "path_type": "hardlink",
+      "sha256": "e0407435c58dfc1ef17fbfb12320c6fd67c56484ec8a846a71ee594ed6ba8530",
+      "size_in_bytes": 30406
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/tensorflow/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/optim/tensorflow/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "be0820ba3a34da1930a24f9b2497b006d1c9720f4c2e881502a9699a8860602c",
+      "size_in_bytes": 151
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/partition.py",
+      "path_type": "hardlink",
+      "sha256": "f70436dabc7fca674d791f237fdfddd779d6f08806891cdf6ff99a955c9a0ebc",
+      "size_in_bytes": 19881
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/propagate.py",
+      "path_type": "hardlink",
+      "sha256": "e59ffa1292497bac08a62e2edf9047c64b6f740cba466198b519cb143c967857",
+      "size_in_bytes": 6014
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/random.py",
+      "path_type": "hardlink",
+      "sha256": "59e27a6767502684a9e5d5b9a9e735897c9bcc0c8052962844a6cf3ed8c65b6e",
+      "size_in_bytes": 2720
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/readout.py",
+      "path_type": "hardlink",
+      "sha256": "699db16cfe8cc1d287b888492056375c6bf9b91b0408f55d8bb195e0fe6b690b",
+      "size_in_bytes": 28193
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "ff5fde9ff517ff3c04c5c461c63cda8c1aa3f7073e1c995c9927d8c5acbac86c",
+      "size_in_bytes": 452
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bebdb8528731add07cb271601702a4a3036f58ab3db9a60c4a821b352201618a",
+      "size_in_bytes": 596
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__pycache__/neighbor.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "161eb71d5aed2da0b2241390f3d525d906f6595e41673efe30b9111e678013a7",
+      "size_in_bytes": 21168
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__pycache__/node2vec_randomwalk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "95d69d7b7c190d9bd21ccdca530a35f3cdb2856066df9f0375885a1a1a4ea243",
+      "size_in_bytes": 3430
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__pycache__/pinsage.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ab0bfa1ff48726b274fb06b3196f03f047cda174120d4a1cf8bcdd6b884cacf0",
+      "size_in_bytes": 8906
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/__pycache__/randomwalks.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d4fa99b342d696c0a6f8c32b371cc4c6cd295ee692708df4a9a6f69014b41300",
+      "size_in_bytes": 10738
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/neighbor.py",
+      "path_type": "hardlink",
+      "sha256": "fbe89868e5b4b54c9b9d5d9b976f6b5b2c5d1478f49a0313a40219d2419fed4e",
+      "size_in_bytes": 24649
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/node2vec_randomwalk.py",
+      "path_type": "hardlink",
+      "sha256": "8e4f10f0ba8b2a844640fb9e3c9f20a74c2e725a1e6ef68c49676e8bc0e3feb6",
+      "size_in_bytes": 3345
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/pinsage.py",
+      "path_type": "hardlink",
+      "sha256": "722df58bf9f95bff739fd5d2239fc83626a7202bac69246d6e926ab4f1625015",
+      "size_in_bytes": 9457
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sampling/randomwalks.py",
+      "path_type": "hardlink",
+      "sha256": "ae0adce2d284d34985fbfc87f48f2110774f10c90840c31eb4baa4626fec8ebd",
+      "size_in_bytes": 11213
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/sparse.py",
+      "path_type": "hardlink",
+      "sha256": "116f160538d38348f4fea2cd5831ad64411aa501b88bc413bde5d679a91ffd52",
+      "size_in_bytes": 21074
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/subgraph.py",
+      "path_type": "hardlink",
+      "sha256": "14931fd60feba02410664e30f07bef7fbf9d616805d5db54c2c2832fc3b054db",
+      "size_in_bytes": 29087
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.0.so",
+      "path_type": "hardlink",
+      "sha256": "7f4931df62e5f49e5b2ea90fd97d8d7b1d190e26e06568d0e6dafadb1867f4e0",
+      "size_in_bytes": 362168
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.8.0.so",
+      "path_type": "hardlink",
+      "sha256": "dd050683a0c5bc0f3311f5e3cd05a5e27e1fa800b257680a926c9ad38336991d",
+      "size_in_bytes": 342640
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.8.1.so",
+      "path_type": "hardlink",
+      "sha256": "0bdd3e02b49f502eed1fee0eed890dc8468933308be5bcaeba793905eaa76f42",
+      "size_in_bytes": 342784
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.8.2.so",
+      "path_type": "hardlink",
+      "sha256": "5342af2dbcf442639ddb4ed375f528739ef4f68419acfeb54b5baa85d15f79ae",
+      "size_in_bytes": 342784
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.9.0.so",
+      "path_type": "hardlink",
+      "sha256": "a3e2d3ee29e0764b5c3b55cf2f816a51fdb8ab8758d4f2b5bee22d4e804a051c",
+      "size_in_bytes": 330440
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.9.1.so",
+      "path_type": "hardlink",
+      "sha256": "413b188b29f0926d4db4d6b05367f0de3d338e1cfbbfeaec6350062462344a73",
+      "size_in_bytes": 330440
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/transform.py",
+      "path_type": "hardlink",
+      "sha256": "c4ac7dda3af57f39b65824a656ecc52f0f9af3d8182ceeab2898630cb1b3639c",
+      "size_in_bytes": 116467
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/traversal.py",
+      "path_type": "hardlink",
+      "sha256": "c708e42f5766c4fb151f578c60f54e75f51119f60b90ab3d8342159febdbf02d",
+      "size_in_bytes": 10056
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/udf.py",
+      "path_type": "hardlink",
+      "sha256": "e577cf3f98ba4cda6e226513989884a423d0bc2959ed175bac681a4eba050c78",
+      "size_in_bytes": 12497
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "5a303591b7aac5435b94a77932fe127eb91fb467a9902650a7f444e9391f62eb",
+      "size_in_bytes": 140
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "99d3bb10eb2d20485a8462d999d267867c579b1ee1ba605e381eb5bd54ef72a1",
+      "size_in_bytes": 275
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/checks.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "aabdff3da7ee54233b28eb9fe845093f61c39ac8c48a262be5c1d740fffe556e",
+      "size_in_bytes": 6560
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/data.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "caa007933cc4feb8292aea90883211c60a95abdfa2fca925ceb62e094f2afaca",
+      "size_in_bytes": 9308
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/filter.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7bf513447a8a367b45f31b50f88dde74f17ea2951992c90dca4dcf93ce86e8ef",
+      "size_in_bytes": 2532
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/internal.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cd589d885a26922aafb9ec0509ab0ef9aee1d420eee29fd30a3b734e369115f5",
+      "size_in_bytes": 30842
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/__pycache__/shared_mem.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b99349ccc5df8373ef82cbb3fe6c4274610e532310e5b8b013e43acc64b438d6",
+      "size_in_bytes": 1421
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/checks.py",
+      "path_type": "hardlink",
+      "sha256": "3a3f58080b350a346c49bcface6df2b637f27e2f103964343220287279001a87",
+      "size_in_bytes": 6758
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/data.py",
+      "path_type": "hardlink",
+      "sha256": "77a44c00fdfd934096f7dfd5799307a5195d86daa60bbfe002e90a2412b1628b",
+      "size_in_bytes": 12031
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/filter.py",
+      "path_type": "hardlink",
+      "sha256": "029091db5225e068fd990dbd782965e2a20cc5d4003441ffc72bda1586b340fa",
+      "size_in_bytes": 2117
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/internal.py",
+      "path_type": "hardlink",
+      "sha256": "6570c6ed0aec7908743c507252600ae3aa9155d9a678522140c96e2cc9f601c0",
+      "size_in_bytes": 30081
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/utils/shared_mem.py",
+      "path_type": "hardlink",
+      "sha256": "d67a2dbc4d4d2ff9555bf552d00e21a2aff070c803d0baf9b3aa926fbe441baa",
+      "size_in_bytes": 1288
+    },
+    {
+      "_path": "lib/python3.9/site-packages/dgl/view.py",
+      "path_type": "hardlink",
+      "sha256": "60cf8911fdca9549cd7c1f9943723502a67958deced5c7dede1836e2acf079cc",
+      "size_in_bytes": 8846
+    }
+  ],
+  "paths_version": 1
+}

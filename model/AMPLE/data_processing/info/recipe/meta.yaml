@@ -1,0 +1,74 @@
+# This file created by conda-build 3.21.5
+# meta.yaml template originally from:
+# /opt/conda, last modified Tue Nov  9 02:12:59 2021
+# ------------------------------------------------
+
+package:
+  name: dgl-cuda11.1
+  version: 0.7.2
+source:
+  git_rev: 0.7.x
+  git_url: https://github.com/dmlc/dgl.git
+build:
+  script_env:
+    - CUDA_VER
+    - USE_CUDA
+  string: py39_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 main
+    - _openmp_mutex 4.5 1_gnu
+    - bzip2 1.0.8 h7b6447c_0
+    - c-ares 1.17.1 h27cfd23_0
+    - ca-certificates 2021.10.26 h06a4308_2
+    - certifi 2021.10.8 py39h06a4308_0
+    - cmake 3.19.6 h973ab73_0
+    - curl 7.78.0 h1ccaba5_0
+    - cython 0.29.24 py39hdbfa776_0
+    - expat 2.4.1 h2531618_2
+    - gettext 0.21.0 hf68c758_0
+    - git 2.32.0 pl5262hc120c5b_1
+    - icu 58.2 he6710b0_3
+    - krb5 1.19.2 hac12032_0
+    - ld_impl_linux-64 2.35.1 h7274673_9
+    - libcurl 7.78.0 h0b77cf5_0
+    - libedit 3.1.20210910 h7f8727e_0
+    - libev 4.33 h7f8727e_1
+    - libffi 3.3 he6710b0_2
+    - libgcc-ng 9.3.0 h5101ec6_17
+    - libgomp 9.3.0 h5101ec6_17
+    - libiconv 1.15 h63c8f33_5
+    - libnghttp2 1.41.0 hf8bcb03_2
+    - libssh2 1.9.0 h1ba5d50_1
+    - libstdcxx-ng 9.3.0 hd4cf53a_17
+    - libuv 1.40.0 h7b6447c_0
+    - libxml2 2.9.12 h03d6c58_0
+    - lz4-c 1.9.3 h295c915_1
+    - ncurses 6.3 heee7806_1
+    - openssl 1.1.1l h7f8727e_0
+    - pcre2 10.35 h14c3975_1
+    - perl 5.26.2 h14c3975_0
+    - pip 21.2.4 py39h06a4308_0
+    - python 3.9.7 h12debd9_1
+    - readline 8.1 h27cfd23_0
+    - rhash 1.4.1 h3c74f83_1
+    - setuptools 58.0.4 py39h06a4308_0
+    - sqlite 3.36.0 hc218d9a_0
+    - tk 8.6.11 h1ccaba5_0
+    - tzdata 2021e hda174b7_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h7b6447c_0
+    - zlib 1.2.11 h7b6447c_3
+    - zstd 1.4.9 haebb681_0
+  run:
+    - networkx
+    - numpy
+    - python >=3.9,<3.10.0a0
+    - scipy
+about:
+  home: https://github.com/dmlc/dgl.git
+  license: Apache
+  license_file: /root/miniconda3/conda-bld/dgl-cuda11.1_1636437745736/work/LICENSE
+extra:
+  copy_test_source_files: true
+  final: true

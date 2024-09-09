@@ -1,0 +1,12 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+backdoo+ 2256202  0.0  0.0   8432  3632 pts/23   Ss+  May23   0:00 -bash
+backdoo+ 2258453  0.0  0.0   8432  3644 pts/24   Ss+  May23   0:00 -bash
+backdoo+ 2258874  0.0  0.0   8568  4496 pts/25   Ss   May23   0:00 -bash
+backdoo+ 2259195  0.0  0.0   8568  4560 pts/26   Ss+  May23   0:00 -bash
+backdoo+ 2670450  0.0  0.0  48116 35564 pts/25   S+   Aug18   0:00 python manage.py runserver --insecure 0.0.0.0:8899
+backdoo+ 2670719  0.8  0.0 557388 133076 pts/25  Sl+  Aug18  76:17 /home/nfs/anaconda3/envs/gputasker/bin/python manage.py runserver --insecure 0.0.0.0:8899
+backdoo+ 2908350  0.0  0.0   8616  5492 pts/4    Ss+  21:27   0:00 /bin/bash --init-file /home/backdoor2023/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+backdoo+ 2911920  0.0  0.0   8616  5428 pts/6    Ss   21:28   0:00 /usr/bin/bash --init-file /home/backdoor2023/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+backdoo+ 2954085  0.0  0.0   8484  5164 pts/7    Ss+  21:39   0:00 /bin/bash --init-file /home/backdoor2023/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+backdoo+ 3137904  0.0  0.0   8896  3276 pts/6    R+   22:24   0:00 ps -u
+backdoo+ 3727005  0.0  0.0   8484  5156 pts/17   Ss+  Aug22   0:00 /bin/bash --init-file /home/backdoor2023/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh

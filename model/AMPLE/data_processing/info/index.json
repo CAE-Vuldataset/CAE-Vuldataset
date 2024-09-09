@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "py39_0",
+  "build_number": 0,
+  "depends": [
+    "networkx",
+    "numpy",
+    "python >=3.9,<3.10.0a0",
+    "scipy"
+  ],
+  "license": "Apache",
+  "name": "dgl-cuda11.1",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1636438509768,
+  "version": "0.7.2"
+}

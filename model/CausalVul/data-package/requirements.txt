@@ -1,0 +1,21 @@
+# LineVul
+pandas
+tokenizers
+transformers
+torch
+captum
+numpy
+tqdm
+scikit-learn
+pandas
+tokenizers
+# notebooks
+ipykernel
+jupyter
+ipywidgets
+# misc
+jsonlines
+simple-file-checksum
+# AST
+tree-sitter
+tree-sitter-languages

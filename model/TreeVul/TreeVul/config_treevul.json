@@ -1,0 +1,148 @@
+local base_path = "/home/nfs/zxh2023/TreeVul/TreeVul/zxh_data/uniqueness/0.5/";
+
+local bert_model = "/home/nfs/zxh2023/TreeVul/TreeVul/codebert-base";
+local max_depth = 3;
+local invalid_label_index = -1;
+local cwe_path_file = base_path + "cwe_path.json";
+local label_file = base_path + "valid_cwes.json";
+local cwe_tree_valid = base_path + "valid_cwe_tree.json";
+
+
+{
+  "random_seed": 2022,
+  "numpy_seed": 2022,
+  "pytorch_seed": 2022,
+  "dataset_reader": {
+    "type": "reader_treevul_hunk",
+    "max_depth": max_depth,
+    "label_file": label_file,
+    "invalid_label_index": invalid_label_index,
+    "max_hunk_num": 8,
+    "tokenizer": {
+      "type": "pretrained_transformer",
+      "model_name": bert_model,
+      "add_special_tokens": false,
+      "max_length": 128
+    },
+    "token_indexers": {
+      "tokens": {
+        "type": "pretrained_transformer",
+        "model_name": bert_model,
+        "namespace": "tags"
+      }
+    }
+  },
+  "train_data_path": base_path + "train_set.json",
+  "validation_data_path": base_path + "validation_set.json",
+  "model": {
+    "type": "model_treevul",
+    "max_depth": max_depth,
+    "beam_size": 5,
+    "top_k": 1,
+    "depth_weights": [
+      1,
+      1,
+      1
+    ],
+    "label_file": label_file,
+    "cwe_path_file": cwe_path_file,
+    "invalid_label_index": invalid_label_index,
+    "dropout": 0.1,
+    "device": "cuda:0",
+    "train_label_embedding": true,
+    "PTM": bert_model,
+    "text_field_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "custom_pretrained_transformer",
+          "model_name": bert_model,
+          "train_parameters": true,
+          "type_vocab_size": 5
+        }
+      }
+    }
+  },
+  "data_loader": {
+    "batch_size": 4, // due to GPU memory size limitation, we use batch_size=4 with num_gradient_accumulation_steps=2
+    "shuffle": true
+  },
+  "validation_data_loader": {
+    "batch_size": 1,
+    "shuffle": false
+  },
+  "trainer": {
+    "type": "custom_gradient_descent",
+    "optimizer": {
+      "type": "huggingface_adamw",
+      "parameter_groups": [
+        [
+          [
+            "_text_field_embedder"
+          ],
+          {
+            "lr": 5e-5,
+            "requires_grad": true
+          }
+        ],
+        [
+          [
+            "_pooler"
+          ],
+          {
+            "lr": 1e-4,
+            "requires_grad": true
+          }
+        ]
+      ],
+      "lr": 1e-3,
+      "betas": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpointer": {
+      "num_serialized_models_to_keep": 0,
+    },
+    "callbacks": [
+      {
+        "type": "prepare_cwe_tree",
+        "cwe_tree_path": cwe_tree_valid,
+        "reader": {
+          "type": "reader_cwe",
+          "tokenizer": {
+            "type": "pretrained_transformer",
+            "model_name": bert_model,
+            "add_special_tokens": true,
+            "max_length": 64
+          },
+          "token_indexers": {
+            "tokens": {
+              "type": "pretrained_transformer",
+              "model_name": bert_model,
+              "namespace": "tags"
+            }
+          }
+        }
+      },
+      {
+        "type": "scheduled_sampling",
+        "decay_strategy": "inverse_sigmoid",
+        "k": 13
+      },
+    ],
+    "custom_callbacks": [
+      {
+        "type": "custom_validation",
+      }
+    ],
+    "learning_rate_scheduler": {
+      "type": "linear_with_warmup",
+      "warmup_steps": 3000
+    },
+    "num_gradient_accumulation_steps": 2,
+    "validation_metric": "+2_weighted_fscore",
+    "num_epochs": 50,
+    "patience": 10,
+    "cuda_device": 0
+  }
+}

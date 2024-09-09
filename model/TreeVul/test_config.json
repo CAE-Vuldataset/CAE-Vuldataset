@@ -1,0 +1,19 @@
+{
+  "random_seed": 2022,
+  "numpy_seed": 2022,
+  "pytorch_seed": 2022,
+  "dataset_reader": {
+    "depth": 2
+  },
+  "model": {
+    "device": "cuda:0",
+    "depth": 2
+  },
+  "validation_data_loader": {
+    "batch_size": 8,
+    "shuffle": false
+  },
+  "trainer": {
+    "cuda_device": 0
+  }
+}

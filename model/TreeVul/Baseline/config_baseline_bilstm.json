@@ -1,0 +1,83 @@
+local glove_file = "glove.6B.300d.txt";
+local depth = 2;
+local invalid_label_index = -1;
+local cwe_path_file = "cwe_path.json";
+local label_file = "valid_cwes.json";
+
+
+{
+  "random_seed": 2022,
+  "numpy_seed": 2022,
+  "pytorch_seed": 2022,
+  "dataset_reader": {
+    "type": "reader_baseline_hunk",
+    "depth": depth,
+    "label_file": label_file,
+    "invalid_label_index": invalid_label_index,
+    "max_hunk_num": 8,
+    "tokenizer_max_length": 128,
+    "token_indexers": {
+      "tokens": {
+        "type": "single_id",
+        "lowercase_tokens": true,
+        "namespace": "tokens"
+      }
+    }
+  },
+  "vocabulary":{
+    "type": "from_instances",
+    "max_vocab_size": 10000
+  },
+  "train_data_path": "train_set.json",
+  "validation_data_path": "validation_set.json",
+  "model": {
+    "type": "model_baseline_bilstm",
+    "depth": depth,
+    "label_file": label_file,
+    "cwe_path_file": cwe_path_file,
+    "invalid_label_index": invalid_label_index,
+    "dropout": 0.1,
+    "device": "cuda:0",
+    "text_field_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "embedding",
+          "embedding_dim": 300,
+          "trainable": true,
+          "vocab_namespace": "tokens",
+          "pretrained_file": glove_file,
+        }
+      }
+    }
+  },
+  "data_loader": {
+    "batch_size": 4,
+    "shuffle": true
+  },
+  "validation_data_loader":{
+    "batch_size": 8,
+    "shuffle": false
+  },
+  "trainer": {
+    "optimizer": {
+      "type": "adam",
+      "lr": 1e-3,
+      "betas": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpointer": {
+      "num_serialized_models_to_keep": 0,
+    },
+    "learning_rate_scheduler": {
+     "type": "linear_with_warmup",
+     "warmup_steps": 3000
+    },
+    "num_gradient_accumulation_steps": 2,
+    "validation_metric": "+2_weighted_fscore",
+    "num_epochs": 50,
+    "patience": 10,
+    "cuda_device": 0
+  }
+}

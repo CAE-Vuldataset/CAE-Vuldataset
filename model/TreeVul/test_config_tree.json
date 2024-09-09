@@ -1,0 +1,39 @@
+{
+  "random_seed": 2022,
+  "numpy_seed": 2022,
+  "pytorch_seed": 2022,
+  "path": "/home/nfs/zxh2023/TreeVul/TreeVul/zxh_data/uniqueness/0.7/",
+  "dataset_reader": {
+    "max_depth": 3
+  },
+  "validation_dataset_reader": {
+    "type": "reader_cwe",
+    "tokenizer": {
+      "type": "pretrained_transformer",
+      "model_name": "/home/nfs/zxh2023/TreeVul/TreeVul/codebert-base",
+      "add_special_tokens": true,
+      "max_length": 64
+    },
+    "token_indexers": {
+      "tokens": {
+        "type": "pretrained_transformer",
+        "model_name": "/home/nfs/zxh2023/TreeVul/TreeVul/codebert-base",
+        "namespace": "tags"
+      }
+    }
+  },
+  "model": {
+    "device": "cuda:0",
+    "max_depth": 3,
+    "beam_size": 5,
+    "top_k": 1,
+    "train_label_embedding": false
+  },
+  "validation_data_loader": {
+    "batch_size": 1,
+    "shuffle": false
+  },
+  "trainer": {
+    "cuda_device": 0
+  }
+}

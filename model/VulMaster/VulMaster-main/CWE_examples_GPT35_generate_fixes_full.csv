@@ -1,0 +1,1838 @@
+cwe_id,cwe_example_1,cwe_example_2,cwe_example_3,cwe_example_4,cwe_example_5,cwe_example_6,cwe_example_7
+CWE-119,"void host_lookup(char *user_supplied_addr) {
+  struct hostent *hp;
+  in_addr_t *addr;
+ - char hostname[64];
+ + char hostname[256]; // Increase buffer size to accommodate larger hostnames
+  in_addr_t inet_addr(const char *cp);
+ 
+  /* routine that ensures user_supplied_addr is in the right format for conversion */
+ 
+  validate_addr_form(user_supplied_addr);
+  addr = inet_addr(user_supplied_addr);
+  hp = gethostbyaddr(addr, sizeof(struct in_addr), AF_INET);
+ 
+ - strcpy(hostname, hp->h_name);
+ + strncpy(hostname, hp->h_name, sizeof(hostname) - 1); // Use strncpy with buffer size - 1
+ 
+ + // Ensure null-termination of the hostname
+ + hostname[sizeof(hostname) - 1] = '\0';
+ }","char *copy_input(const char *user_supplied_string) {
+ - int i, dst_index;
+ - char *dst_buf = (char*)malloc(4 * sizeof(char) * MAX_SIZE);
+ + size_t input_length = strlen(user_supplied_string);
+ + size_t encoded_length = 0;
+ + char *dst_buf;
+ 
+ - if (MAX_SIZE <= strlen(user_supplied_string)) {
+ + // Determine the length of the encoded string
+ + for (size_t i = 0; i < input_length; i++) {
+ + if ('&' == user_supplied_string[i]) {
+ + encoded_length += 5; // Ampersand is expanded to ""&amp;""
+ + } else if ('<' == user_supplied_string[i]) {
+ + encoded_length += 4; // Less than symbol is expanded to ""&lt;""
+ + } else {
+ + encoded_length += 1; // Other characters remain as-is
+ + }
+ + }
+ 
+ + // Validate the length of the encoded string
+ + if (encoded_length >= (4 * MAX_SIZE)) {
+  die(""Encoded string too long, aborting!"");
+  }
+ 
+ + dst_buf = (char *)malloc((encoded_length + 1) * sizeof(char)); // Allocate memory for the encoded string
+ 
+ - dst_index = 0;
+ - for (int i = 0; i < strlen(user_supplied_string); i++) {
+ + size_t dst_index = 0;
+ + for (size_t i = 0; i < input_length; i++) {
+  if ('&' == user_supplied_string[i]) {
+  if (dst_index + 5 > encoded_length) {
+  die(""Encoded string buffer overflow, aborting!"");
+  }
+  strcpy(dst_buf + dst_index, ""&amp;"");
+  dst_index += 5;
+  } else if ('<' == user_supplied_string[i]) {
+  if (dst_index + 4 > encoded_length) {
+  die(""Encoded string buffer overflow, aborting!"");
+  }
+  strcpy(dst_buf + dst_index, ""&lt;"");
+  dst_index += 4;
+  } else {
+  dst_buf[dst_index++] = user_supplied_string[i];
+  }
+  }
+ 
+  dst_buf[dst_index] = '\0'; // Null-terminate the encoded string
+  return dst_buf;
+ }","int main(int argc, char **argv) {
+  char *items[] = {""boat"", ""car"", ""truck"", ""train""};
+  int num_items = sizeof(items) / sizeof(items[0]);
+  int index = GetUntrustedOffset();
+ 
+ + if (index >= 1 && index <= num_items) {
+  printf(""You selected %s\n"", items[index - 1]);
+ + } else {
+ + printf(""Invalid offset specified\n"");
+ + }
+ 
+  return 0;
+ }","int getValueFromArray(int *array, int len, int index) {
+  int value;
+ 
+ - // Check that the array index is less than the maximum length of the array
+ - if (index < len) {
+ + // Check that the array index is within the valid range
+ + if (index >= 0 && index < len) {
+  // Get the value at the specified index of the array
+  value = array[index];
+  }
+  // If array index is invalid, output an error message
+  // and return a value indicating an error
+  else {
+ - printf(""Value is: %d\n"", array[index]);
+ + if (index < 0) {
+ + printf(""Invalid array index: Negative value\n"");
+ + } else {
+ + printf(""Invalid array index: Out of range\n"");
+ + }
+  value = -1;
+  }
+ 
+  return value;
+ }",,,
+CWE-125,"int getValueFromArray(int *array, int len, int index) {
+  int value;
+ 
+ - // Check that the array index is less than the maximum length of the array
+ - if (index < len) {
+ + // Check that the array index is within the valid range
+ + if (index >= 0 && index < len) {
+  // Get the value at the specified index of the array
+  value = array[index];
+  }
+  // If array index is invalid, output an error message
+  // and return a value indicating an error
+  else {
+ - printf(""Value is: %d\n"", array[index]);
+ + if (index < 0) {
+ + printf(""Invalid array index: Negative value\n"");
+ + } else {
+ + printf(""Invalid array index: Out of range\n"");
+ + }
+  value = -1;
+  }
+ 
+  return value;
+ }",,,,,,
+CWE-20,,,,,,,
+CWE-476,"void host_lookup(char *user_supplied_addr) {
+  struct hostent *hp;
+  in_addr_t *addr;
+  char hostname[64];
+  in_addr_t inet_addr(const char *cp);
+ 
+  /* Routine that ensures user_supplied_addr is in the right format for conversion */
+  validate_addr_form(user_supplied_addr);
+  addr = inet_addr(user_supplied_addr);
+  hp = gethostbyaddr(addr, sizeof(struct in_addr), AF_INET);
+ 
+ + if (hp == NULL) {
+ + die(""Failed to resolve hostname: Die evil hacker!\n"");
+ + } else {
+  strcpy(hostname, hp->h_name);
+ + }
+ }",,,,,,
+CWE-787,"int returnChunkSize(void *) {
+ 
+ /* if chunk info is valid, return the size of usable memory,
+ * else, return 0 to indicate an error
+ */
+ ...
+ }
+ int main() {
+ ...
+ - memcpy(destBuf, srcBuf, (returnChunkSize(destBuf)-1));
+ + int size = returnChunkSize(destBuf);
+ + if (size >= 1) {
+ + memcpy(destBuf, srcBuf, size-1);
+ + }
+ ...
+ }","void host_lookup(char *user_supplied_addr){
+  struct hostent *hp;
+  in_addr_t *addr;
+  char hostname[256]; // Increase buffer size to accommodate larger hostnames
+  in_addr_t inet_addr(const char *cp);
+ 
+  /*routine that ensures user_supplied_addr is in the right format for conversion */
+  validate_addr_form(user_supplied_addr);
+  addr = inet_addr(user_supplied_addr);
+  hp = gethostbyaddr(addr, sizeof(struct in_addr), AF_INET);
+ 
+ - strcpy(hostname, hp->h_name);
+ + strncpy(hostname, hp->h_name, sizeof(hostname) - 1);
+ + hostname[sizeof(hostname) - 1] = '\0';
+ }","char *copy_input(char *user_supplied_string) {
+  int i, dst_index;
+ - char *dst_buf = (char *)malloc(4 * sizeof(char) * MAX_SIZE);
+ + char *dst_buf = (char *)malloc((5 * strlen(user_supplied_string) + 1) * sizeof(char));
+  if (MAX_SIZE <= strlen(user_supplied_string)) {
+  die(""user string too long, die evil hacker!"");
+  }
+  dst_index = 0;
+  for (i = 0; i < strlen(user_supplied_string); i++) {
+  if ('&' == user_supplied_string[i]) {
+ + if (dst_index + 5 >= (5 * strlen(user_supplied_string) + 1)) {
+ + die(""destination buffer too small, abort encoding!"");
+ + }
+  dst_buf[dst_index++] = '&';
+  dst_buf[dst_index++] = 'a';
+  dst_buf[dst_index++] = 'm';
+  dst_buf[dst_index++] = 'p';
+  dst_buf[dst_index++] = ';';
+  } else if ('<' == user_supplied_string[i]) {
+ + if (dst_index + 4 >= (5 * strlen(user_supplied_string) + 1)) {
+ + die(""destination buffer too small, abort encoding!"");
+ + }
+  dst_buf[dst_index++] = '&';
+  dst_buf[dst_index++] = 'l';
+  dst_buf[dst_index++] = 't';
+  dst_buf[dst_index++] = ';';
+  } else {
+ + if (dst_index + 1 >= (5 * strlen(user_supplied_string) + 1)) {
+ + die(""destination buffer too small, abort encoding!"");
+ + }
+  dst_buf[dst_index++] = user_supplied_string[i];
+  }
+  }
+ + dst_buf[dst_index] = '\0';
+  return dst_buf;
+ }","char *trimTrailingWhitespace(char *strMessage, int length) {
+ - char *retMessage;
+ - char *message = malloc(sizeof(char) * (length + 1));
+ + char *retMessage = malloc(sizeof(char) * (length + 1));
+ 
+  // copy input string to a temporary string
+ - char message[length + 1];
+  int index;
+  for (index = 0; index < length; index++) {
+  message[index] = strMessage[index];
+  }
+  message[index] = '\0';
+ 
+  // trim trailing whitespace
+  int len = index - 1;
+  while (len >= 0 && isspace(message[len])) {
+  message[len] = '\0';
+  len--;
+  }
+ 
+  // return string without trailing whitespace
+  retMessage = malloc(sizeof(char) * (len + 2));
+  strncpy(retMessage, message, len + 1);
+  retMessage[len + 1] = '\0';
+  return retMessage;
+ }","int main() {
+  ...
+ - strncpy(destBuf, &srcBuf[find(srcBuf, ch)], 1024);
+ + size_t index = find(srcBuf, ch);
+ + if (index >= 0 && index < strlen(srcBuf)) {
+ + strncpy(destBuf, &srcBuf[index], 1024);
+ + } else {
+ + // Handle error or take appropriate action
+ + // e.g., set destBuf to a default value
+ + strncpy(destBuf, DEFAULT_VALUE, 1024);
+ + }
+  ...
+ }",,
+CWE-200,"try {
+  openDbConnection();
+ }
+ //print generic exception message
+ catch (Exception $e) {
+ - echo 'Caught exception: ', $e->getMessage(), '\n';
+ - echo 'Check credentials in config file at: ', $Mysql_config_location, '\n';
+ + echo 'Caught exception: An error occurred while connecting to the database.', '\n';
+ }",,,,,,
+CWE-190,"img_t table_ptr; /*struct containing img data, 10kB each*/
+ int num_imgs;
+ ...
+ num_imgs = get_num_imgs();
+ 
+ // Check for potential integer overflow before allocating memory
+ + if (num_imgs <= 0 || SIZE_MAX / sizeof(img_t) < num_imgs) {
+ + ExitError(""Invalid number of images requested!"");
+ + }
+ 
+ table_ptr = (img_t*)malloc(sizeof(img_t)*num_imgs);
+ ...","nresp = packet_get_int();
+ if (nresp > 0) {
+ - response = xmalloc(nresp * sizeof(char*));
+ + if (nresp > SIZE_MAX / sizeof(char*)) {
+ + ExitError(""Integer overflow occurred!"");
+ + }
+ + response = xmalloc(nresp * sizeof(char*));
+  for (i = 0; i < nresp; i++) response[i] = packet_get_string(NULL);
+ }","short int bytesRec = 0;
+ char buf[SOMEBIGNUM];
+ 
+ while (bytesRec < MAXGET) {
+ - bytesRec += getFromInput(buf + bytesRec);
+ + if (bytesRec > MAXGET - getFromInput(buf + bytesRec)) {
+ + ExitError(""Integer overflow occurred!"");
+ + }
+ + bytesRec += getFromInput(buf + bytesRec);
+ }","#define JAN 1
+ #define FEB 2
+ #define MAR 3
+ 
+ - short getMonthlySales(int month) {...}
+ + int getMonthlySales(int month) {...}
+ 
+ - float calculateRevenueForQuarter(short quarterSold) {...}
+ + float calculateRevenueForQuarter(int quarterSold) {...}
+ 
+ int determineFirstQuarterRevenue() {
+ 
+  // Variable for sales revenue for the quarter
+  float quarterRevenue = 0.0f;
+ 
+ - short JanSold = getMonthlySales(JAN); /* Get sales in January */
+ - short FebSold = getMonthlySales(FEB); /* Get sales in February */
+ - short MarSold = getMonthlySales(MAR); /* Get sales in March */
+ + int JanSold = getMonthlySales(JAN); /* Get sales in January */
+ + int FebSold = getMonthlySales(FEB); /* Get sales in February */
+ + int MarSold = getMonthlySales(MAR); /* Get sales in March */
+ 
+  // Calculate quarterly total
+ - short quarterSold = JanSold + FebSold + MarSold;
+ + int quarterSold = JanSold + FebSold + MarSold;
+ 
+  // Calculate the total revenue for the quarter
+  quarterRevenue = calculateRevenueForQuarter(quarterSold);
+ 
+  saveFirstQuarterRevenue(quarterRevenue);
+ 
+  return 0;
+ }",,,
+CWE-362,"- void f(pthread_mutex_t *mutex) {
++ int f(pthread_mutex_t *mutex) {
++     int result;
++ 
+-     pthread_mutex_lock(mutex);
++     result = pthread_mutex_lock(mutex);
++     if (result != 0) {
++         // Handle error, report or recover
++         // ...
++         return result;
++     }
+  
+      /* access shared resource */
+  
+-     pthread_mutex_unlock(mutex);
++     result = pthread_mutex_unlock(mutex);
++     if (result != 0) {
++         // Handle error, report or recover
++         // ...
++         return result;
++     }
++ 
++     return 0;
+ }",,,,,,
+CWE-416,"#include <stdio.h>
+#include <unistd.h>
+#define BUFSIZER1 512
+#define BUFSIZER2 ((BUFSIZER1/2) - 8)
+
+int main(int argc, char **argv) {
+-    char *buf1R1;
+-    char *buf2R1;
++    char *buf1R1 = NULL;
++    char *buf2R1 = NULL;
+    char *buf2R2;
+    char *buf3R2;
+
+-    buf1R1 = (char *) malloc(BUFSIZER1);
+-    buf2R1 = (char *) malloc(BUFSIZER1);
++    buf1R1 = (char *) malloc(BUFSIZER1);
+    free(buf2R1);
+    buf2R2 = (char *) malloc(BUFSIZER2);
+    buf3R2 = (char *) malloc(BUFSIZER2);
+
+    if (argc > 1) {
+        strncpy(buf2R1, argv[1], BUFSIZER1-1);
+    }
+
+    free(buf1R1);
+    free(buf2R2);
+    free(buf3R2);
+}","char* ptr = (char*)malloc(SIZE);
+int abrt = 0;  // Add a flag to track if the operation is aborted
+
+if (err) {
+  abrt = 1;
+  free(ptr);
+}
+// ...
+if (abrt) {
+-  logError(""operation aborted before commit"", ptr);
++  logError(""operation aborted before commit"");
+}
+",,,,,
+CWE-400,"sock=socket(AF_INET, SOCK_STREAM, 0);
++ int connectionCount = 0; // Track the number of connections made
+
+while (1) {
+  newsock=accept(sock, ...);
+  printf(""A connection has been accepted\n"");
+  
+  pid = fork();
++ if (pid == 0) { // Child process
++   // Handle the connection in the child process
++   close(sock); // Close the socket in the child process
++   handleConnection(newsock);
++   close(newsock);
++   exit(0);
++ } else if (pid > 0) { // Parent process
++   close(newsock); // Close the socket in the parent process
++   connectionCount++;
++   // Limit the number of connections
++   if (connectionCount >= MAX_CONNECTIONS) {
++     printf(""Maximum number of connections reached. Exiting.\n"");
++     break;
++   }
++ } else { // Fork failed
++   printf(""Fork failed. Exiting.\n"");
++   break;
++ }
+}
+","int writeDataFromSocketToFile(char *host, int port)
+{
+-    char filename[FILENAME_SIZE];
++    char filename[FILENAME_SIZE + 1]; // Increase size to accommodate null terminator
+    char buffer[BUFFER_SIZE];
+    int socket = openSocketConnection(host, port);
+
+    if (socket < 0) {
+        printf(""Unable to open socket connection"");
+        return(FAIL);
+    }
+
+    if (getNextMessage(socket, filename, FILENAME_SIZE) > 0) {
+-        if (openFileToWrite(filename) > 0) {
++        if (validateFilename(filename) > 0 && openFileToWrite(filename) > 0) {
+            int bytesRead;
+            int totalBytesWritten = 0;
+            while ((bytesRead = getNextMessage(socket, buffer, BUFFER_SIZE)) > 0) {
+                if (!(writeToFile(buffer, bytesRead) > 0))
+                    break;
+                totalBytesWritten += bytesRead;
+
++                // Added check to limit file size
++                if (totalBytesWritten >= MAX_FILE_SIZE) {
++                    printf(""File size limit exceeded. Aborting.\n"");
++                    break;
++                }
+            }
+            closeFile();
+        }
+    }
+    closeSocket(socket);
+}","int processMessage(char **message)
+{
+-    char *body;
++    char *body = NULL; // Initialize body pointer to NULL
+
+-    int length = getMessageLength(message[0]);
++    unsigned int length = getMessageLength(message[0]); // Change type to unsigned int
+
+-    if (length > 0) {
++    if (length > 0 && length < MAX_LENGTH) { // Add maximum length check
+        body = &message[1][0];
+        processMessageBody(body);
+        return SUCCESS;
+    }
+    else {
+        printf(""Unable to process message; invalid message length"");
+        return FAIL;
+    }
+}",,,,
+CWE-401,"char* getBlock(int fd) {
+    char* buf = (char*) malloc(BLOCK_SIZE);
+
+    if (!buf) {
+        return NULL;
+    }
+    if (read(fd, buf, BLOCK_SIZE) != BLOCK_SIZE) {
++       free(buf);
+        return NULL;
+    }
+    return buf;
+}",,,,,,
+CWE-772,"SqlConnection conn = new SqlConnection(connString);
+SqlCommand cmd = new SqlCommand(queryString);
+cmd.Connection = conn;
+conn.Open();
+SqlDataReader rdr = null;
+try {
+-   rdr = cmd.ExecuteReader();
++   using (rdr = cmd.ExecuteReader())
++   {
+        HarvestResults(rdr);
++   }
+} catch (Exception ex) {
+    // Handle the exception
+} finally {
++   rdr?.Close(); // Close the SqlDataReader using null conditional operator
+    conn.Close(); // Close the SqlConnection
+}",,"int decodeFile(char* fName) {
+  char buf[BUF_SZ];
+- FILE* f = fopen(fName, ""r"");
++ FILE* f = NULL;
+  
++ f = fopen(fName, ""r"");
+  if (!f) {
+    printf(""cannot open %s\n"", fName);
+    return DECODE_FAIL;
+  } else {
+    while (fgets(buf, BUF_SZ, f)) {
+      if (!checkChecksum(buf)) {
++      fclose(f); 
+        return DECODE_FAIL;
+      } else {
+        decodeBlock(buf);
+      }
+    }
+  }
+  
+  fclose(f); // Close the file handle after the loop finishes
+  return DECODE_SUCCESS;
+}
+",,,,
+CWE-617,"String email = request.getParameter(""email_address"");
+- assert email != null;
++ if (email == null) {
++     // Handle the case where email is not provided
++     // For example, show an error message or set a default value
++     email = """";
++ }",,,,,,
+CWE-269,"seteuid(0);
+/* do some stuff */
+- seteuid(getuid());
++ seteuid(geteuid());",,,,,,
+CWE-120,"- char last_name[20];
++ char last_name[256];
+printf (""Enter your last name: "");
+- scanf (""%s"", last_name);
++ scanf (""%255s"", last_name);","void manipulate_string(char* string) {
+- char buf[24];
++ char buf[256];
+- strcpy(buf, string);
++ strncpy(buf, string, sizeof(buf) - 1);
+  ...
+}","char buf[24];
+printf(""Please enter your name and press <Enter>\n"");
+- gets(buf);
++ fgets(buf, sizeof(buf), stdin);
+...
+}","...
+struct hostent *clienthp;
+char hostname[MAX_LEN];
+
+// create server socket, bind to server address and listen on socket
+...
+
+// accept client connections and process requests
+int count = 0;
+for (count = 0; count < MAX_CONNECTIONS; count++) {
+
+    int clientlen = sizeof(struct sockaddr_in);
+    int clientsocket = accept(serversocket, (struct sockaddr *)&clientaddr, &clientlen);
+
+    if (clientsocket >= 0) {
+        clienthp = gethostbyaddr((char*) &clientaddr.sin_addr.s_addr, sizeof(clientaddr.sin_addr.s_addr), AF_INET);
+        
+        // Check the length of the hostname before copying
++       if (strlen(clienthp->h_name) >= MAX_LEN) {
++           logOutput(""Hostname exceeds maximum length"");
++       } else {
++           strncpy(hostname, clienthp->h_name, MAX_LEN - 1);
++           hostname[MAX_LEN - 1] = '\0'; // Ensure null-termination
++           logOutput(""Accepted client connection from host "", hostname);
++       }
+        
+        // process client request
+        ...
+        close(clientsocket);
+    }
+}
+close(serversocket);
+
+...",,,
+CWE-415,"char* ptr = (char*)malloc (SIZE);
+...
+if (abrt) {
+-   free(ptr);
++   ptr = NULL; // Set the pointer to NULL instead of freeing
+}
+...
+if (ptr != NULL) {
+    free(ptr); // Check if the pointer is not NULL before freeing
+}","#include <stdio.h>
+#include <unistd.h>
+#define BUFSIZE1 512
+#define BUFSIZE2 ((BUFSIZE1/2) - 8)
+
+int main(int argc, char **argv) {
+    char *buf1R1;
+    char *buf2R1;
+    char *buf1R2;
+    buf1R1 = (char *) malloc(BUFSIZE2);
+    buf2R1 = (char *) malloc(BUFSIZE2);
+    free(buf1R1);
+    free(buf2R1);
++   buf1R1 = NULL; // Set the pointer to NULL after freeing
+    buf1R2 = (char *) malloc(BUFSIZE1);
+    strncpy(buf1R2, argv[1], BUFSIZE1-1);
+    free(buf2R1);
++   buf2R1 = NULL; // Set the pointer to NULL after freeing
+    free(buf1R2);
+}",,,,,
+CWE-835,"int processMessagesFromServer(char *hostaddr, int port) {
+...
+int servsock;
+int connected;
+struct sockaddr_in servaddr;
+
+// create socket to connect to server
+servsock = socket( AF_INET, SOCK_STREAM, 0);
+memset( &servaddr, 0, sizeof(servaddr));
+servaddr.sin_family = AF_INET;
+servaddr.sin_port = htons(port);
+servaddr.sin_addr.s_addr = inet_addr(hostaddr);
+
+// initialize number of attempts counter
+int count = 0;
+
+do {
+
++   // break the loop if the maximum number of attempts is reached
++   if (count >= MAX_ATTEMPTS) {
++       break;
++   }
+
+    // establish connection to server
+    connected = connect(servsock, (struct sockaddr *)&servaddr, sizeof(servaddr));
+
+    // increment counter
+    count++;
+
+    // if connected then read and process messages from server
+    if (connected > -1) {
+
+        // read and process messages
+        ...
+    }
+
+    // keep trying to establish connection to the server
+    // up to a maximum number of attempts
+
+} while (connected < 0);
+
+// close socket and return success or failure
+...
+}",,,,,,
+CWE-295,"if ((cert = SSL_get_peer_certificate(ssl)) && host) {
+    foo = SSL_get_verify_result(ssl);
+
+-   if ((X509_V_OK == foo) || (X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN == foo)) {
++   if ((X509_V_OK == foo) && verifyCertificate(cert, host)) {
+        // certificate looks good, host can be trusted
+        // ...
+    }
+}","if (cert = SSL_get_peer_certificate(ssl)) {
+      foo = SSL_get_verify_result(ssl);
+-     if ((X509_V_OK == foo) || (X509_V_ERR_CERT_HAS_EXPIRED == foo))
++    if (X509_V_OK == foo && !is_certificate_expired(cert))
+ 
+       // do stuff
+}
+","if (cert = SSL_get_peer_certificate(ssl)) {
++    int verify_result = SSL_get_verify_result(ssl);
++    if (verify_result == X509_V_OK) {
+     // got a certificate, do secret things
+
++    } else {
++        // Certificate verification failed, handle accordingly
++    }
+}
+",,,,
+CWE-674,"void do_something_recursive(int flg)
+{
+-   if (flg) { do_something_recursive(flg); }
++   if (flg) {
++       // Do some real work here
++       flg = 0; // Modify value of flg on done condition
++       do_something_recursive(flg);
++   }
+}",,,,,,
+CWE-404,"int decodeFile(char* fName) {
+    char buf[BUF_SZ];
+    FILE* f = fopen(fName, ""r"");
+    if (!f) {
+        printf(""cannot open %s\n"", fName);
+        return DECODE_FAIL;
+    }
+    else {
+        while (fgets(buf, BUF_SZ, f)) {
+            if (!checkChecksum(buf)) {
+-               return DECODE_FAIL;
++               fclose(f);
++               return DECODE_FAIL;
+            }
+            else {
+                decodeBlock(buf);
+            }
+        }
++       fclose(f);
+    }
+    return DECODE_SUCCESS;
+}
+","class A {
+  void foo();
+};
+
+void A::foo() {
+-  int* ptr;
+-  ptr = (int*)malloc(sizeof(int));
+-  delete ptr;
++  int* ptr = new int;
++  delete ptr;
+}
+","class A {
+  void foo(bool);
+};
+
+void A::foo(bool heap) {
+-  int localArray[2] = { 11, 22 };
+-  int* p = localArray;
++  int* p;
+  if (heap) {
+    p = new int[2];
+  } else {
+    p = nullptr;
+  }
++  if (heap) {
++    delete[] p;
++  } else {
++    delete p;
++  }
+}",,,,
+CWE-78,"int main(int argc, char** argv) {
+-   char cmd[CMD_MAX] = ""/usr/bin/cat "";
++   char cmd[CMD_MAX + 12] = ""/usr/bin/cat "";
++   char arg[CMD_MAX];
++   strncpy(arg, argv[1], CMD_MAX - 1);
++   arg[CMD_MAX - 1] = '\0';
++   strncat(cmd, arg, CMD_MAX - 1);
+    system(cmd);
+}
+",,,,,,
+CWE-369,"double divide(double x, double y){
+-   return x/y;
++   if (0 == y){
++       throw DivideByZero;
++   }
++   return x/y;
+}","int SafeDivision(int x, int y) {
++    try {
+        return (x / y);
++    }
++    catch (System.DivideByZeroException dbz) {
++       System.Console.WriteLine(""Division by zero attempted!"");
++       return 0;
++    }
+}
+",,,,,
+CWE-22,"String path = getInputPath();
+if (isPathValid(path)) {
+    File f = new File(path);
+    f.delete();
+}
+
+boolean isPathValid(String path) {
++   File canonicalFile;
++   try {
++       canonicalFile = new File(""/safe_dir"").getCanonicalFile();
++   } catch (IOException e) {
++       // Handle the exception
++       return false;
++   }
++   File inputFile;
++   try {
++       inputFile = new File(path).getCanonicalFile();
++   } catch (IOException e) {
++       // Handle the exception
++       return false;
++   }
++   return inputFile.toPath().startsWith(canonicalFile.toPath());
+}
+",,,,,,
+CWE-908,"char str[20];
++ strcpy(str, """");
+strcat(str, ""hello world"");
+printf(""%s"", str);
+","char str[20];
++ memset(str, 0, sizeof(str));  // Initialize str with null terminators
+strcat(str, ""hello world"");
+printf(""%s"", str);",,,,,
+CWE-285,"function runEmployeeQuery($dbName, $name){
++   // Add an authorization check to validate the user's access rights
++   if (!isAuthorized($name)) {
++       die(""Unauthorized access"");
++   }
+  
+    mysql_select_db($dbName,$globalDbHandle) or die(""Could not open Database"".$dbName);
+    // Use a prepared statement to avoid CWE-89
+    $preparedStatement = $globalDbHandle->prepare('SELECT * FROM employees WHERE name = :name');
+    $preparedStatement->execute(array(':name' => $name));
+    return $preparedStatement->fetchAll();
+}
+
+/.../
+
+$employeeRecord = runEmployeeQuery('EmployeeDB',$_GET['EmployeeName']);",,,,,,
+CWE-74,"$userName = $_POST[""user""];
+- $command = 'ls -l /home/' . $userName;
++ $escapedUserName = escapeshellarg($userName);
++ $command = 'ls -l /home/' . $escapedUserName;
+system($command);
+",,,,,,
+CWE-134,"#include <stdio.h>
+
+void printWrapper(const char *string) {
+  printf(string);
+}
+
+int main(int argc, char **argv) {
+- char buf[5012];
+- memcpy(buf, argv[1], 5012);
+- printWrapper(argv[1]);
++ if (argc >= 2) {
++     printWrapper(argv[1]);
++ }
+  return 0;
+}
+","int main(int argc, char **argv) {
+- char buf[128];
+- snprintf(buf, 128, argv[1]);
++ if (argc >= 2) {
++     char buf[128];
++     strncpy(buf, argv[1], sizeof(buf)-1);
++     buf[sizeof(buf)-1] = '\0';
++ }
+  return 0;
+}",,,,,
+CWE-77,"int main(int argc, char** argv) {
+-    char cmd[CMD_MAX] = ""/usr/bin/cat "";
+-    strcat(cmd, argv[1]);
++    if (argc != 2) {
++        printf(""Usage: %s <filename>\n"", argv[0]);
++        return 1;
++    }
++    
++    // Validate the input filename to ensure it doesn't contain any malicious characters or sequences
++    const char* filename = argv[1];
++    // Add any necessary validation checks here based on your specific requirements
++
++    // Construct the command using a safe method, such as snprintf, to avoid buffer overflow
++    char cmd[CMD_MAX];
++    snprintf(cmd, CMD_MAX, ""/usr/bin/cat %s"", filename);
+
+    // Use system() to execute the command
+    system(cmd);
+
+    return 0;
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char **argv) {
+-    char cat[] = ""cat "";
+-    char *command;
+-    size_t commandLength;
++    const char *cat = ""cat "";
++    const char *filename;
+
+-    commandLength = strlen(cat) + strlen(argv[1]) + 1;
+-    command = (char *) malloc(commandLength);
+-    strncpy(command, cat, commandLength);
+-    strncat(command, argv[1], (commandLength - strlen(cat)) );
++    if (argc != 2) {
++        printf(""Usage: %s <filename>\n"", argv[0]);
++        return 1;
++    }
++    
++    // Validate the input filename to ensure it doesn't contain any malicious characters or sequences
++    filename = argv[1];
++    // Add any necessary validation checks here based on your specific requirements
+
+-    system(command);
++    execl(""/bin/cat"", ""cat"", filename, (char *) NULL);
+
+    return 0;
+}",,,,,
+CWE-287,"my $q = new CGI;
+
+if ($q->cookie('loggedin') ne ""true"") {
+-   if (! AuthenticateUser($q->param('username'), $q->param('password'))) {
++   if (! $q->cookie('loggedin') || ! $q->cookie('user')) {
++       ExitError(""Error: you need to log in first"");
++   }
++   elsif (! AuthenticateUser($q->param('username'), $q->param('password'))) {
+        ExitError(""Error: invalid username or password"");
+    }
+    else {
+        # Set loggedin and user cookies.
+        $q->cookie(
+            -name => 'loggedin',
+            -value => 'true'
+        );
+
+        $q->cookie(
+            -name => 'user',
+            -value => $q->param('username')
+        );
+    }
+}
+
+if ($q->cookie('user') eq ""Administrator"" && $q->cookie('loggedin') eq ""true"") {
+    DoAdministratorTasks();
+}
+",,,,,,
+CWE-252,"char buf[10], cp_buf[10];
+- fgets(buf, 10, stdin);
++ if (fgets(buf, 10, stdin) == NULL) {
++     // Handle the error or unexpected condition
++     // (e.g., print an error message, exit the program, etc.)
++ }
+
+- strcpy(cp_buf, buf);
++ strncpy(cp_buf, buf, sizeof(cp_buf) - 1);
++ cp_buf[sizeof(cp_buf) - 1] = '\0';
+","int returnChunkSize(void *) {
+    /* if chunk info is valid, return the size of usable memory,
+       else, return -1 to indicate an error */
+    ...
+}
+
+int main() {
+    ...
+-   memcpy(destBuf, srcBuf, (returnChunkSize(destBuf)-1));
++   int chunkSize = returnChunkSize(destBuf);
++   if (chunkSize > 0) {
++       size_t sizeToCopy = (chunkSize > 1) ? (chunkSize - 1) : 0;
++       memcpy(destBuf, srcBuf, sizeToCopy);
++   } else {
++       // Handle the error or unexpected condition
++       // (e.g., print an error message, exit the program, etc.)
++   }
+    ...
+}","buf = (char*) malloc(req_size);
+- strncpy(buf, xfer, req_size);
++ if (buf != NULL) {
++     strncpy(buf, xfer, req_size);
++ } else {
++     // Handle the error or unexpected condition
++     // (e.g., print an error message, exit the program, etc.)
++ }","void host_lookup(char *user_supplied_addr){
+  struct hostent *hp;
+  in_addr_t *addr;
+  char hostname[64];
+  in_addr_t inet_addr(const char *cp);
+
+  /*routine that ensures user_supplied_addr is in the right format for conversion */
+
+  validate_addr_form(user_supplied_addr);
+  addr = inet_addr(user_supplied_addr);
+  
+- hp = gethostbyaddr( addr, sizeof(struct in_addr), AF_INET);
+- strcpy(hostname, hp->h_name);
++ if (addr != NULL) {
++     hp = gethostbyaddr( addr, sizeof(struct in_addr), AF_INET);
++     if (hp != NULL) {
++         strncpy(hostname, hp->h_name, sizeof(hostname) - 1);
++         hostname[sizeof(hostname) - 1] = '\0';
++     } else {
++         // Handle the error or unexpected condition
++         // (e.g., print an error message, use a default value, etc.)
++     }
++ } else {
++     // Handle the error or unexpected condition
++     // (e.g., print an error message, use a default value, etc.)
++ }
+}
+",,"-int f(pthread_mutex_t *mutex) {
++int f(pthread_mutex_t *mutex) {
++    int result;
++
+- pthread_mutex_lock(mutex);
++    result = pthread_mutex_lock(mutex);
++    if (result != 0) {
++        // Handle the error or unexpected condition
++        // (e.g., print an error message, use a default value, etc.)
++        return result;
++    }
+
+    /* access shared resource */
+
+- pthread_mutex_unlock(mutex);
++    result = pthread_mutex_unlock(mutex);
++    if (result != 0) {
++        // Handle the error or unexpected condition
++        // (e.g., print an error message, use a default value, etc.)
++    }
++
++    return result;
+}",
+CWE-763,"char **ap, *argv[10], *inputstring;
+for (ap = argv; (*ap = strsep(&inputstring, "" \t"")) != NULL;)
+    if (**ap != '\0')
+        if (++ap >= &argv[10])
+            break;
+
+/.../
++ // Corrected release of memory
++ free(inputstring);
+- // Incorrect release of memory
+- free(ap[4]);","void foo(){
+    BarObj *ptr = new BarObj();
+    /* do some work with ptr here */
+
+    // ...
+
++   delete ptr;
+-   free(ptr);
+}","#define SUCCESS (1)
+#define FAILURE (0)
+
+int contains_char(char c) {
+-    char *str;
++    const char *str;
+    int i = 0;
+-    str = (char*)malloc(20*sizeof(char));
++    str = ""Search Me!"";
+    while (str[i] != '\0') {
+        if (str[i] == c) {
+            /* matched char, return success */
+-            free(str);
+            return SUCCESS;
+        }
+        /* didn't match yet, increment index and try next char */
+        i = i + 1;
+    }
+    /* we did not match the char in the string, return failure */
+-    free(str);
+    return FAILURE;
+}","//hardcode input length for simplicity
+char* input = (char*) malloc(40*sizeof(char));
+char *tok, *command;
+char* sep = "" \t"";
+
+get_user_input( input );
+
+/* The following loop will parse and process each token in the input string */
+
+tok = strtok( input, sep);
+while( NULL != tok ){
+-    if( isMalformed( tok ) ){
+
+-        /* ignore and discard bad data */
+-        free( tok );
+-    }
+-    else{
++    if( !isMalformed( tok ) ){
+
++        /* copy and enqueue good data */
++        command = (char*) malloc( (strlen(tok) + 1) * sizeof(char) );
++        strcpy( command, tok );
++        add_to_command_queue( command );
+     }
+-    tok = strtok( NULL, sep));
++    tok = strtok( NULL, sep);
+ }
+
++free( input );",,,
+CWE-732,"#define OUTFILE ""hello.out""
+
+- umask(0);
++ umask(S_IRUSR | S_IWUSR);  // Set the umask to allow read and write only for the owner
+
+FILE *out;
+/* Ignore link following (CWE-59) for brevity */
+
+out = fopen(OUTFILE, ""w"");
+if (out) {
+  fprintf(out, ""hello world!\n"");
+  fclose(out);
+}",,,,,,
+CWE-665,"char str[20];
+
++ str[0] = '\0';  // Initialize str to an empty string before concatenation
+strcat(str, ""hello world"");
+printf(""%s"", str);",,,,,,
+CWE-354,"(sd = socket(AF_INET, SOCK_DGRAM, 0);
+ serv.sin_family = AF_INET;
+ serv.sin_addr.s_addr = htonl(INADDR_ANY);
+ serv.sin_port = htons(1008);
+ bind(sd, (struct sockaddr *) & serv, sizeof(serv));
+
+ while (1) {
++    unsigned char received_checksum;
++    unsigned char calculated_checksum = 0;
+     memset(msg, 0x0, MAX_MSG);
+     clilen = sizeof(cli);
+-    if (inet_ntoa(cli.sin_addr)==...)
+-        n = recvfrom(sd, msg, MAX_MSG, 0, (struct sockaddr *) & cli, &clilen);
++    if (inet_ntoa(cli.sin_addr) == ...) {
++        n = recvfrom(sd, msg, MAX_MSG, 0, (struct sockaddr *) & cli, &clilen);
++        
++        // Calculate checksum
++        for (int i = 0; i < n; i++) {
++            calculated_checksum ^= msg[i];
++        }
++        
++        // Retrieve the received checksum from the message (assuming it's at a known position)
++        received_checksum = msg[...];
++        
++        // Compare the calculated checksum with the received checksum
++        if (calculated_checksum == received_checksum) {
++            // Proceed with processing the message
++            // ...
++        } else {
++            // Handle integrity check failure
++            // ...
++        }
++    }
+ }",,,,,,
+CWE-667,"- void f(pthread_mutex_t *mutex) {
++ int f(pthread_mutex_t *mutex) {
++     int result;
+-     pthread_mutex_lock(mutex);
++     result = pthread_mutex_lock(mutex);
+- 
+-     /* access shared resource */
+- 
+- 
+-     pthread_mutex_unlock(mutex);
++     if (0 != result)
++         return result;
++
++     /* access shared resource */
++
++     result = pthread_mutex_unlock(mutex);
++     return result;
+}",,,,,,
+CWE-129,"int getValueFromArray(int *array, int len, int index) {
+    int value;
+
+-   // check that the array index is less than the maximum
++   // check that the array index is within the correct range
+
+-   // length of the array
+-   if (index < len) {
++   if (index >= 0 && index < len) {
+        // get the value at the specified index of the array
+        value = array[index];
+    }
+    // if array index is invalid then output error message
+    // and return value indicating error
+    else {
+        printf(""Value is: %d\n"", array[index]);
+        value = -1;
+    }
+
+    return value;
+}
+","/* capture the sizes of all messages */
+int getsizes(int sock, int count, int *sizes) {
+    ...
+    char buf[BUFFER_SIZE];
+    int ok;
+    int num, size;
+
+    // read values from socket and add them to the sizes array
+    while ((ok = gen_recv(sock, buf, sizeof(buf))) == 0) {
+        // continue reading from socket until buf only contains '.'
+        if (DOTLINE(buf))
+            break;
+        else if (sscanf(buf, ""%d %d"", &num, &size) == 2) {
++           if (num > 0 && num <= (unsigned)count)
++               sizes[num - 1] = size;
++           else {
++               /* warn about possible attempt to induce buffer overflow */
++               report(stderr, ""Warning: ignoring bogus data for message sizes returned by server.\n"");
++           }
+        }
+    }
+    ...
+}","int main(int argc, char **argv) {
+    char *items[] = {""boat"", ""car"", ""truck"", ""train""};
+    int offset = GetUntrustedOffset();
++   int index = offset - 1;
+
++   if (index >= 0 && index < sizeof(items) / sizeof(items[0])) {
+        printf(""You selected %s\n"", items[index]);
++   } else {
++       printf(""Invalid offset\n"");
++   }
+}
+",,,,
+CWE-79,"$username = $_GET['username'];
+- echo '<div class=""header""> Welcome, ' . $username . '</div>';
++ echo '<div class=""header""> Welcome, ' . htmlspecialchars($username, ENT_QUOTES, 'UTF-8') . '</div>';",,,,,,
+CWE-89,"...
+string userName = ctx.getAuthenticatedUserName();
+- string query = ""SELECT * FROM items WHERE owner = '"" + userName + ""' AND itemname = '"" + ItemName.Text + ""'"";
++ string query = ""SELECT * FROM items WHERE owner = @userName AND itemname = @itemName"";
+SqlCommand command = new SqlCommand(query, conn);
++ command.Parameters.AddWithValue(""@userName"", userName);
++ command.Parameters.AddWithValue(""@itemName"", ItemName.Text);
+sda = new SqlDataAdapter(command);
+DataTable dt = new DataTable();
+sda.Fill(dt);
+...
+",,,,,,
+CWE-522,"...
+Properties prop = new Properties();
+prop.load(new FileInputStream(""config.properties""));
+- String password = prop.getProperty(""password"");
++ String password = getPasswordFromSecureSource(); // Replace with a secure method to retrieve the password
+DriverManager.getConnection(url, usr, password);
+...","...
++ // Use a secure method to retrieve the password from a secure source
++ String password = getPasswordFromSecureSource();
+NetworkCredential netCred = new NetworkCredential(username, password, domain);
+...",,,,,
+CWE-863,"$role = $_COOKIES['role'];
+if (!$role) {
+- $role = getRole('user');
+- if ($role) {
+-   // save the cookie to send out in future responses
+-   setcookie(""role"", $role, time()+60*60*2);
+- }
+- else {
+-   ShowLoginScreen();
+-   die(""\n"");
+- }
++ ShowLoginScreen();
++ die(""\n"");
+}
+if ($role == 'Reader') {
+  DisplayMedicalHistory($_POST['patient_ID']);
+}
+else {
+  die(""You are not Authorized to view this record\n"");
+}
+",,,,,,
+CWE-770,"sock=socket(AF_INET, SOCK_STREAM, 0);
++ int connectionCount = 0;
+while (1) {
+  newsock=accept(sock, ...);
+  printf(""A connection has been accepted\n"");
++ if (connectionCount >= MAX_CONNECTIONS) {
++   // Handle connection limit exceeded error
++   printf(""Connection limit exceeded. Please try again later.\n"");
++   close(newsock);
++   continue;
++ }
+  pid = fork();
++ if (pid == 0) {
++   // Child process
++   close(sock);
++   handleConnection(newsock);
++   exit(0);
++ } else if (pid > 0) {
++   // Parent process
++   close(newsock);
++   connectionCount++;
++ } else {
++   // Handle fork error
++   printf(""Fork failed. Please try again later.\n"");
++   close(newsock);
++ }
+}
+","int writeDataFromSocketToFile(char *host, int port)
+{
++ const int MAX_FILE_SIZE = 1048576;  // Maximum allowed file size (1MB)
+
+  char filename[FILENAME_SIZE];
+  char buffer[BUFFER_SIZE];
+  int socket = openSocketConnection(host, port);
+","int processMessage(char **message)
+{
++ const unsigned int MAX_LENGTH = 10000;  // Maximum allowed length of the message body
+
+- int length = getMessageLength(message[0]);
++ unsigned int length = getMessageLength(message[0]);
+
+- if (length > 0) {
++ if (length > 0 && length < MAX_LENGTH) {
+
+  char *body = &message[1][0];
+  processMessageBody(body);
+  return(SUCCESS);
+}
+else {
+  printf(""Unable to process message; invalid message length"");
+  return(FAIL);
+}","bar connection() {
+- foo = malloc(1024);
++ foo = malloc(sizeof(*foo));
+return foo;
+}
+
+endConnection(bar foo) {
+free(foo);
+}
+
+int main() {
+while(1) {
+foo=connection();
+}
+
+endConnection(foo)
+}
+",,,
+CWE-191,"#include <stdio.h>
+#include <stdbool.h>
+
+int main(void) {
+- int i;
++ unsigned int i;  // Use unsigned int to prevent integer underflow
+
+- i = -2147483648;
++ i = 0x80000000;  // Use hexadecimal representation for lowest negative value
+i = i - 1;
+
+return 0;
+}","#include <stdio.h>
+#include <stdbool.h>
+
+int main(void) {
+  int a = 5, b = 6;
+- size_t len = a - b;
++ size_t len = (a >= b) ? (a - b) : 0;  // Check for non-negative result before assigning
+
+- char buf[len];  // Vulnerable stack allocation
++ if (len > 0) {
++   char buf[len];  // Allocate on the stack only if len is non-zero
++ } else {
++   // Handle error or alternative code path when len is zero
++ }
+
+  return 0;
+}",,,,,
+CWE-754,"#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+  char buf[10], cp_buf[10];
+  fgets(buf, 10, stdin);
+- strcpy(cp_buf, buf);  // Vulnerable strcpy call
+
++ size_t buf_len = strlen(buf);
++ if (buf_len > 0 && buf[buf_len - 1] == '\n') {
++   buf[buf_len - 1] = '\0';  // Ensure buf is null-terminated if newline is present
++ } else {
++   // Handle error or alternative code path when newline is not present
++ }
+
++ strncpy(cp_buf, buf, sizeof(cp_buf) - 1);
++ cp_buf[sizeof(cp_buf) - 1] = '\0';  // Ensure cp_buf is null-terminated
+
+  return 0;
+}
+","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+- char* buf;
++ char* buf = NULL;
+  size_t req_size = /* size calculation */;
+
+- buf = (char*) malloc(req_size);
+- strncpy(buf, xfer, req_size);
+
++ if (req_size > 0) {
++   buf = (char*) malloc(req_size);
++   if (buf != NULL) {
++     strncpy(buf, xfer, req_size);
++   } else {
++     // Handle memory allocation failure
++     fprintf(stderr, ""Failed to allocate memory\n"");
++     exit(EXIT_FAILURE);
++   }
++ }
+
+  return 0;
+}
+","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <netdb.h>
+#include <arpa/inet.h>
+
+void host_lookup(char *user_supplied_addr) {
+  struct hostent *hp;
+  in_addr_t *addr;
+  char hostname[64];
+
+  /* Routine that ensures user_supplied_addr is in the right format for conversion */
+  validate_addr_form(user_supplied_addr);
+
+  addr = inet_addr(user_supplied_addr);
+  hp = gethostbyaddr(addr, sizeof(struct in_addr), AF_INET);
+
+- strcpy(hostname, hp->h_name);
++ if (hp != NULL) {
++   strncpy(hostname, hp->h_name, sizeof(hostname) - 1);
++   hostname[sizeof(hostname) - 1] = '\0';
++ } else {
++   // Handle hostname resolution failure
++   fprintf(stderr, ""Failed to resolve hostname\n"");
++   exit(EXIT_FAILURE);
++ }
+}
+
+int main(void) {
+  char user_input[16];
+
+  printf(""Enter an IP address: "");
+  fgets(user_input, sizeof(user_input), stdin);
+  user_input[str","#include <stdio.h>
+
+int outputStringToFile(char *output, char *filename) {
+- openFileToWrite(filename);
+- writeToFile(output);
+- closeFile(filename);
++ int isOutput = SUCCESS;
+
++ int isOpen = openFileToWrite(filename);
++ if (isOpen == FAIL) {
++   printf(""Unable to open file %s"", filename);
++   isOutput = FAIL;
++ } else {
++   int isWrite = writeToFile(output);
++   if (isWrite == FAIL) {
++     printf(""Unable to write to file %s"", filename);
++     isOutput = FAIL;
++   }
+
++   int isClose = closeFile(filename);
++   if (isClose == FAIL) {
++     isOutput = FAIL;
++   }
++ }
+
++ return isOutput;
+}
+",,,
+CWE-862,"function runEmployeeQuery($dbName, $name){
++   // Check authorization here before executing the query
++   if (!isAuthorized()) {
++       die(""Unauthorized access"");
++   }
+
+    mysql_select_db($dbName,$globalDbHandle) or die(""Could not open Database"".$dbName);
+    // Use a prepared statement to avoid CWE-89
+    $preparedStatement = $globalDbHandle->prepare('SELECT * FROM employees WHERE name = :name');
+    $preparedStatement->execute(array(':name' => $name));
+    return $preparedStatement->fetchAll();
+}
+",,,,,,
+CWE-347,"File f = new File(downloadedFilePath);
+-JarFile jf = new JarFile(f);
++JarFile jf = new JarFile(f, true);",,,,,,
+CWE-273,"bool DoSecureStuff(HANDLE hPipe) {
+  bool fDataWritten = false;
+- ImpersonateNamedPipeClient(hPipe);
++ if (ImpersonateNamedPipeClient(hPipe)) {
++   HANDLE hFile = CreateFile(...);
++   // ...
++   RevertToSelf();
++   // ...
++ }
+  // ...
+}
+",,,,,,
+CWE-426,"#define DIR ""/restricted/directory""
+#define PATH ""/bin:/usr/bin""  // Define a trusted PATH
+
+char cmd[500];
+sprintf(cmd, ""ls -l %480s"", DIR);
+
+/* Raise privileges to those needed for accessing DIR. */
+RaisePrivileges(...);
+
++ char trustedPath[100];
++ sprintf(trustedPath, ""PATH=%s"", PATH);
++ putenv(trustedPath);
+ 
+system(cmd);
+
+DropPrivileges(...);
+...
+",,,,,,
+CWE-601,"$redirect_url = $_GET['url'];
+
+- header(""Location: "" . $redirect_url);
++ 
++ // Check if the redirect URL is a trusted site
++ $trusted_sites = array(
++     'http://example.com',
++     'http://trusted.example.com',
++     // Add more trusted sites if needed
++ );
++ 
++ $is_trusted = false;
++ foreach ($trusted_sites as $site) {
++     if (strpos($redirect_url, $site) === 0) {
++         $is_trusted = true;
++         break;
++     }
++ }
++ 
++ if ($is_trusted) {
++     header(""Location: "" . $redirect_url);
++ } else {
++     // Handle the case when the redirect URL is not trusted
++     // For example, display an error message or redirect to a default page
++     header(""Location: http://example.com/default-page.php"");
++ }",,,,,,
+CWE-682,"img_t table_ptr; /*struct containing img data, 10kB each*/
+int num_imgs;
+...
+num_imgs = get_num_imgs();
+
++ if (num_imgs <= 0) {
++     // Handle the case when the number of images is not valid
++     // For example, display an error message or set a default value
++     num_imgs = 0; // Set a default value of 0
++ }
+
+- table_ptr = (img_t*)malloc(sizeof(img_t)*num_imgs);
++ if (num_imgs > 0) {
++     table_ptr = (img_t*)malloc(sizeof(img_t)*num_imgs);
++ } else {
++     table_ptr = NULL; // Set the pointer to NULL if num_imgs is 0 or negative
++ }
+...","int *p = x;
+- char *second_char = (char *)(p + 1);
++ char *second_char = (char *)((char *)p + 1);
+",,,,,
+CWE-90,"context = new InitialDirContext(env);
+- String searchFilter = ""StreetAddress="" + address;
++ String searchFilter = ""(&(objectClass=*)(StreetAddress="" + escapeLDAPFilter(address) + ""))"";
+NamingEnumeration answer = context.search(searchBase, searchFilter, searchCtls);",,,,,,
+CWE-94,"$MessageFile = ""messages.out"";
+if ($_GET[""action""] == ""NewMessage"") {
+  $name = $_GET[""name""];
+  $message = $_GET[""message""];
+- $handle = fopen($MessageFile, ""a+"");
++ $handle = fopen($MessageFile, ""a"") or die(""Unable to open file"");
+  fwrite($handle, ""<b>"" . htmlspecialchars($name) . ""</b> says '"" . htmlspecialchars($message) . ""'<hr>\n"");
+  fclose($handle);
+  echo ""Message Saved!<p>\n"";
+}
+else if ($_GET[""action""] == ""ViewMessages"") {
+- include($MessageFile);
++ echo file_get_contents($MessageFile);
+}",,,,,,
+CWE-327,"-EVP_des_ecb();
++EVP_aes_256_cbc();
+",,,,,,
+CWE-532,"-logger.info(""Username: "" + username + "", CCN: "" + ccn);
++logger.info(""User logged in: "" + username);
+","- Log.e(""ExampleActivity"", ""Caught exception: "" + e + "" While on User:"" + User.toString());
++ Log.e(""ExampleActivity"", ""Caught exception: "" + e + "" While on User:"" + User.getId());",,,,,
+CWE-319,"- URL u = new URL(""http://www.secret.example.org/"");
++ URL u = new URL(""https://www.secret.example.org/"");
+
+- HttpURLConnection hu = (HttpURLConnection) u.openConnection();
++ HttpURLConnection hu = (HttpURLConnection) u.openConnection();
++ hu.setRequestProperty(""Connection"", ""close"");
+
+hu.setRequestMethod(""PUT"");
+hu.connect();
+OutputStream os = hu.getOutputStream();
+hu.disconnect();
+",,,,,,
+CWE-88,"sub do_listing {
+  my($fname) = @_;
+  if (!validate_name($fname)) {
+    print ""Error: name is not well-formed!\n"";
+    return;
+  }
+  # build command
+-  my $cmd = ""/bin/ls -l $fname"";
++  my $cmd = ""/bin/ls -l -- $fname"";
+  system($cmd);
+}
+
+sub validate_name {
+  my($name) = @_;
+-  if ($name =~ /^[\w\-]+$/) {
++  if ($name =~ /^\w[\w\-]+$/) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+",,,,,,
+CWE-494,"URL[] classURLs = new URL[]{
+  new URL(""file:subdir/"")
+};
+
++ MessageDigest md = MessageDigest.getInstance(""SHA-256"");
++ try (InputStream is = new URL(""file:subdir/loadMe.class"").openStream()) {
++     byte[] buffer = new byte[8192];
++     int bytesRead;
++     while ((bytesRead = is.read(buffer)) != -1) {
++         md.update(buffer, 0, bytesRead);
++     }
++ }
++ byte[] checksum = md.digest();
++ String expectedChecksum = ""YOUR_EXPECTED_CHECKSUM""; // Replace with the expected checksum
+
++ if (!verifyChecksum(expectedChecksum, checksum)) {
++     throw new SecurityException(""Integrity check failed for loaded class"");
++ }
+
+URLClassLoader loader = new URLClassLoader(classURLs);
+Class<?> loadedClass = Class.forName(""loadMe"", true, loader);",,,,,,
+CWE-346,"IntentFilter filter = new IntentFilter(""com.example.RemoveUser"");
+MyReceiver receiver = new MyReceiver();
+
++ // Check the origin of the intent
++ filter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
++ filter.addCategory(Intent.CATEGORY_DEFAULT);
+
+registerReceiver(receiver, filter);
+
+public class DeleteReceiver extends BroadcastReceiver {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        int userID = intent.getIntExtra(""userID"", -1);
+        
++       // Check the origin of the intent before performing the operation
++       if (isTrustedSource(intent)) {
++           destroyUserData(userID);
++       } else {
++           // Handle unauthorized intent
++       }
+    }
++   
++   private boolean isTrustedSource(Intent intent) {
++       // Implement your logic to check if the intent is from a trusted source
++       // You can compare the intent's package name, signature, or use an allowlist
++       // Return true if the source is trusted, false otherwise
++   }
+}
+",,,,,,
+CWE-681,"unsigned int readdata() {
+    int amount = 0;
+    // ...
+    if (result == ERROR)
+        amount = -1;
+    // ...
+
++   if (amount < 0) {
++       // Handle the error condition appropriately
++       // For example, return an error code or throw an exception
++       // Do not perform the implicit conversion
++   }
+
+-   return amount;
++   return static_cast<unsigned int>(amount);
+}
+",,"unsigned int readdata() {
+    int amount = 0;
+    // ...
+    amount = accessmainframe();
+    // ...
+
++   if (amount < 0) {
++       // Handle the error condition appropriately
++       // For example, return an error code or throw an exception
++       // Do not perform the implicit conversion
++   }
+
+-   return amount;
++   return static_cast<unsigned int>(amount);
+}
+",,,,
+CWE-193,"int i;
+unsigned int numWidgets;
+Widget **WidgetList;
+
+numWidgets = GetUntrustedSizeValue();
+if ((numWidgets == 0) || (numWidgets > MAX_NUM_WIDGETS)) {
+    ExitError(""Incorrect number of widgets requested!"");
+}
++ // Allocate space for numWidgets + 1 pointers to Widgets
++ WidgetList = (Widget **)malloc((numWidgets + 1) * sizeof(Widget *));
+printf(""WidgetList ptr=%p\n"", WidgetList);
+for (i = 0; i < numWidgets; i++) {
+    WidgetList[i] = InitializeWidget();
+}
++ WidgetList[numWidgets] = NULL;
+showWidgets(WidgetList);
+",,"char firstname[20];
+char lastname[20];
+char fullname[40];
+
+fullname[0] = '\0';
+
+- strncat(fullname, firstname, 20);
+- strncat(fullname, lastname, 20);
++ strncat(fullname, firstname, sizeof(fullname) - strlen(fullname) - 1);
++ strncat(fullname, lastname, sizeof(fullname) - strlen(fullname) - 1);
+","-  for(i=0; i<=PATH_SIZE; i++) { 
++ for(i=0; i<PATH_SIZE; i++) {
+
+ char c = getc();
+  if (c == EOF) {
+    filename[i] = '\0';
+    break; // Exit the loop if EOF is encountered
+  }
+
+  filename[i] = c;
+}
+","int setFilename(char *filename) {
+  char name[21]; // Increase size to accommodate null terminator
+- sprintf(name, ""%16s.dat"", filename);
++ snprintf(name, sizeof(name), ""%16s.dat"", filename);
+  int success = saveFormattedFilenameToDB(name);
+  return success;
+}
+",,
+CWE-290,"sd = socket(AF_INET, SOCK_DGRAM, 0);
+serv.sin_family = AF_INET;
+serv.sin_addr.s_addr = htonl(INADDR_ANY);
+serv.sin_port = htons(1008);
+bind(sd, (struct sockaddr *) & serv, sizeof(serv));
+
+while (1) {
+  memset(msg, 0x0, MAX_MSG);
+  clilen = sizeof(cli);
+- if (inet_ntoa(cli.sin_addr)==getTrustedAddress()) {
++ if (isAddressTrusted(cli.sin_addr)) {
+    n = recvfrom(sd, msg, MAX_MSG, 0, (struct sockaddr *) & cli, &clilen);
+  }
+}
+",,"struct hostent *hp;
+struct in_addr myaddr;
+char* tHost = ""trustme.example.com"";
+myaddr.s_addr = inet_addr(ip_addr_string);
+
+hp = gethostbyaddr((char *) &myaddr, sizeof(struct in_addr), AF_INET);
+- if (hp && !strncmp(hp->h_name, tHost, sizeof(tHost))) {
++ if (hp && checkHostname(hp->h_name, tHost)) {
+  trusted = true;
+} else {
+  trusted = false;
+}",,,,
+CWE-672,"char* ptr = (char*)malloc (SIZE);
+if (err) {
+  abrt = 1;
+  free(ptr);
+}
+...
+if (abrt) {
++ logError(""operation aborted before commit"", NULL);
+- logError(""operation aborted before commit"", ptr);
+}
+","char* ptr = (char*)malloc(SIZE);
+...
+if (abrt) {
+- free(ptr);
++ ptr = NULL;
+}
+...
+if (ptr != NULL) {
++ free(ptr);
+}
+","int processMessage(char **message)
+{
+    int result = SUCCESS;
+    int length = getMessageLength(message[0]);
+    char *messageBody;
+
+    if ((length > 0) && (length < MAX_MESSAGE_SIZE)) {
+        messageBody = (char*)malloc(length * sizeof(char));
+        messageBody = &message[1][0];
+
+        int success = processMessageBody(messageBody);
+
+        if (success == ERROR) {
+            result = ERROR;
+-           free(messageBody);
+        }
+
+        if (result == ERROR) {
+            logError(""Error processing message"", messageBody);
+        }
+
++       free(messageBody);
+    }
+    else {
+        printf(""Unable to process message; invalid message length"");
+        result = FAIL;
+    }
+
+    return result;
+}
+",,,,
+CWE-502,"try {
+    File file = new File(""object.obj"");
+    ObjectInputStream in = new ObjectInputStream(new FileInputStream(file));
+-   javax.swing.JButton button = (javax.swing.JButton) in.readObject();
++   // Mitigation: Prevent deserialization
++   in.readObject();
+    in.close();
+}
+",,,,,,
+CWE-434,"// Define the target location where the picture being
+// uploaded is going to be saved.
+- $target = ""pictures/"" . basename($_FILES['uploadedfile']['name']);
++ $target = ""pictures/"" . uniqid() . ""_"" . basename($_FILES['uploadedfile']['name']);
+
+// Move the uploaded file to the new location.
+- if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target))
++ $allowedExtensions = array('jpg', 'jpeg', 'png');
++ $fileExtension = strtolower(pathinfo($_FILES['uploadedfile']['name'], PATHINFO_EXTENSION));
++ if(in_array($fileExtension, $allowedExtensions) && move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target))
+{
+    echo ""The picture has been successfully uploaded."";
+}
+else
+{
+    echo ""There was an error uploading the picture, please try again."";
+}",,,,,,
+CWE-203,"my $username = param('username');
+my $password = param('password');
+
+if (IsValidUsername($username) == 1) {
+    if (IsValidPassword($username, $password) == 1) {
+        print ""Login Successful"";
+    } else {
+-       print ""Login Failed - incorrect password"";
++       print ""Login Failed - incorrect username or password"";
+    }
+} else {
+-   print ""Login Failed - unknown username"";
++   print ""Login Failed - incorrect username or password"";
+}
+",,,,,,

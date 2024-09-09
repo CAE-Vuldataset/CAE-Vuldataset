@@ -1,12 +1,11 @@
-# SoK: Characterizing and Evaluating Software Vulnerability Datasets
+# SoK: Software Vulnerability Dataset
 
 ## Description
 
-Software vulnerabilities are the root cause of many cyber attacks. Not surprisingly, vulnerability-related studies, such as vulnerability analysis, detection, and repair, have received much attention. These studies have led to the introduction of many vulnerability datasets.  
-However, there is no systematic understanding of the quality of these datasets.
-This motivates the present SoK, which proposes a systematic characterization and evaluation of vulnerability datasets. Our systematization is based on four aspects of vulnerability datasets: their quality, purpose, source, and generation method; for measuring their quality, we present seven quantitative metrics, which may be of independent value.
-We first conduct a study of 67 vulnerability datasets, including 57 academic publications and 10 industrial datasets, then we identify and systematize 28 vulnerability datasets that are publicly available.
-Among other things, we find that there is no single vulnerability dataset or generation method of `` benchmark-quality``. We also discuss future research directions.
+Software vulnerabilities are a primary cause of cyberattacks, with new vulnerabilities being discovered on a daily basis.There is a community studying a range of problems related to vulnerability analysis, detection, and automated patching, all of which require competent datasets. However, there is no systematic understanding on the competency of vulnerability datasets for these purposes or application tasks, let alone benchmark datasets. The present SoK aims to fill this void by proposing a set of attributes to characterize software vulnerability datasets. We evaluate the impact of the dataset attributes on the effectiveness of four application tasks. We show that the attributes and their characteristics can not only guide researchers in selecting suitable datasets for their application tasks, but also guide the creation of future datasets that exhibit the desired characteristics.
+
+We first conduct a study of 72 vulnerability datasets, including 62 academic publications and 10 industrial datasets, then we identify and systematize 31 vulnerability datasets that are publicly available.
+We also discuss future research directions.
 
 ## Vulnerability Datasets
 

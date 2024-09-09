@@ -43,23 +43,16 @@ Thirty-one open-source vulnerability datasets along with their corresponding pap
 | [VulPecker](https://dl.acm.org/doi/abs/10.1145/2991079.2991102) | VulPecker: An Automated Vulnerability Detection System Based on Code Similarity Analysis | ACSAC | [link](https://github.com/vulpecker/Vulpecker) |
 
 ## Folder Description
-`./attribute/`: The program used to calculate each attribute are stored.
-  `./attribute/reproduction_package/dq_analysis/attributes/`: Immediacy, Completeness and uniqueness of implementations are stored in this path.
-  
-`./model/`: The model reproduced in the paper are stored.
+`./attribute/`: The program used to calculate each attribute are stored.  
+- `./attribute/reproduction_package/dq_analysis/attributes/`: Immediacy, Completeness and uniqueness of implementations are stored in this path.
 
-  AMPLE: [Vulnerability Detection with Graph Simplification and Enhanced Graph Representation Learning](https://ieeexplore.ieee.org/document/10172762)
-  
-  CasualVul: [Towards Causal Deep Learning for Vulnerability Detection](https://dl.acm.org/doi/10.1145/3597503.3639170)
-  
-  Le et al.: [On the Use of Fine-grained Vulnerable Code Statements for Software Vulnerability Assessment Models](https://dl.acm.org/doi/10.1145/3524842.3528433)
-  
-  PatchRNN: [PatchRNN: A Deep Learning-Based System for Security Patch Identification](https://ieeexplore.ieee.org/document/9652940)
-  
-  TreeVul: [Fine-grained Commit-level Vulnerability Type Prediction by CWE Tree Structure](https://ieeexplore.ieee.org/document/10172785)
-  
-  VulMaster: [Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources](https://dl.acm.org/doi/10.1145/3597503.3639222)
-  
-  VulRepair: [VulRepair: A T5-Based Automated Software Vulnerability Repair](https://dl.acm.org/doi/10.1145/3540250.3549098)
+`./model/`: The model reproduced in the paper are stored.  
+- AMPLE: [Vulnerability Detection with Graph Simplification and Enhanced Graph Representation Learning](https://ieeexplore.ieee.org/document/10172762)
+- CasualVul: [Towards Causal Deep Learning for Vulnerability Detection](https://dl.acm.org/doi/10.1145/3597503.3639170)
+- Le et al.: [On the Use of Fine-grained Vulnerable Code Statements for Software Vulnerability Assessment Models](https://dl.acm.org/doi/10.1145/3524842.3528433)
+- PatchRNN: [PatchRNN: A Deep Learning-Based System for Security Patch Identification](https://ieeexplore.ieee.org/document/9652940)
+- TreeVul: [Fine-grained Commit-level Vulnerability Type Prediction by CWE Tree Structure](https://ieeexplore.ieee.org/document/10172785)
+- VulMaster: [Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources](https://dl.acm.org/doi/10.1145/3597503.3639222)
+- VulRepair: [VulRepair: A T5-Based Automated Software Vulnerability Repair](https://dl.acm.org/doi/10.1145/3540250.3549098)
   
   

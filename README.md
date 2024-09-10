@@ -44,7 +44,7 @@ Thirty-one open-source vulnerability datasets along with their corresponding pap
 
 ## Folder Description
 `./attribute/`: The program used to calculate each attribute are stored.  
-- `./attribute/reproduction_package/dq_analysis/attributes/`: Immediacy, Completeness and uniqueness of implementations are stored in this path.
+- `./attribute/reproduction_package/dq_analysis/attributes/`: Immediacy, Completeness and Uniqueness of implementations are stored in this path.
 
 `./model/`: The model reproduced in the paper are stored.  
 - AMPLE: [Vulnerability Detection with Graph Simplification and Enhanced Graph Representation Learning](https://ieeexplore.ieee.org/document/10172762)

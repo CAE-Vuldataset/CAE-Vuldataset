@@ -8,7 +8,7 @@ We also discuss future research directions.
 
 ## Vulnerability Datasets
 31 open-source vulnerability datasets along with their corresponding papers and open-source links:
-| Dataset | Paper | Venue/Organization | Link(For Datasets) |
+| Dataset | Paper | Venue/Organization | Link (for Datasets) |
 | --- | --- | --- | --- |
 | [Benchmark](https://link.springer.com/chapter/10.1007/978-3-030-41579-2_13) | Deep learning-based vulnerable function detection: A benchmark | ICICS | [link](https://github.com/Seahymn2019/Function-level-Vulnerability-Dataset/tree/master/Data) |
 | [BigVul](https://dl.acm.org/doi/abs/10.1145/3379597.3387501) | A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries | MSR | [link](https://github.com/ZeoVan/MSR_20_Code_Vulnerability_CSV_Dataset) |

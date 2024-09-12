@@ -7,10 +7,10 @@ We first conduct a study of 72 vulnerability datasets, including 62 academic pub
 We also discuss future research directions.
 
 ## Vulnerability Datasets
-Thirty-one open-source vulnerability datasets along with their corresponding papers and open-source links.
+31 open-source vulnerability datasets along with their corresponding papers and open-source links:
 | Dataset | Paper | Venue/Organization | Link(For Datasets) |
 | --- | --- | --- | --- |
-| [benchmark](https://link.springer.com/chapter/10.1007/978-3-030-41579-2_13) | Deep learning-based vulnerable function detection: A benchmark | ICICS | [link](https://github.com/Seahymn2019/Function-level-Vulnerability-Dataset/tree/master/Data) |
+| [Benchmark](https://link.springer.com/chapter/10.1007/978-3-030-41579-2_13) | Deep learning-based vulnerable function detection: A benchmark | ICICS | [link](https://github.com/Seahymn2019/Function-level-Vulnerability-Dataset/tree/master/Data) |
 | [BigVul](https://dl.acm.org/doi/abs/10.1145/3379597.3387501) | A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries | MSR | [link](https://github.com/ZeoVan/MSR_20_Code_Vulnerability_CSV_Dataset) |
 | [CrossVul](https://dl.acm.org/doi/abs/10.1145/3468264.3473122) | CrossVul: a cross-language vulnerability dataset with commit data | ESEC/FSE | [link](https://zenodo.org/record/4734050#.Y_YRtexBy3I) |
 | [CVEfixes](https://dl.acm.org/doi/abs/10.1145/3475960.3475985) | CVEfixes:Automated Collection of Vulnerabilities and Their Fixes from Open-Source Software  | PROMISE | [link](https://github.com/secureIT-project/CVEfixes/blob/main/Doc/DataDictionary.md) |

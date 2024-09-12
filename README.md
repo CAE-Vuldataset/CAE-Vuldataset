@@ -1,4 +1,4 @@
-# SoK: Software Vulnerability Dataset
+# SoK: Software Vulnerability Datasets
 
 ## Description
 Software vulnerabilities are a primary cause of cyberattacks, with new vulnerabilities being discovered on a daily basis.There is a community studying a range of problems related to vulnerability analysis, detection, and automated patching, all of which require competent datasets. However, there is no systematic understanding on the competency of vulnerability datasets for these purposes or application tasks, let alone benchmark datasets. The present SoK aims to fill this void by proposing a set of attributes to characterize software vulnerability datasets. We evaluate the impact of the dataset attributes on the effectiveness of four application tasks. We show that the attributes and their characteristics can not only guide researchers in selecting suitable datasets for their application tasks, but also guide the creation of future datasets that exhibit the desired characteristics.

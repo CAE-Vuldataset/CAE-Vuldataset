@@ -3,7 +3,7 @@
 ## Description
 Software vulnerabilities are a primary cause of cyberattacks, with new vulnerabilities being discovered on a daily basis.There is a community studying a range of problems related to vulnerability analysis, detection, and automated patching, all of which require competent datasets. However, there is no systematic understanding on the competency of vulnerability datasets for these purposes or application tasks, let alone benchmark datasets. The present SoK aims to fill this void by proposing a set of attributes to characterize software vulnerability datasets. We evaluate the impact of the dataset attributes on the effectiveness of four application tasks. We show that the attributes and their characteristics can not only guide researchers in selecting suitable datasets for their application tasks, but also guide the creation of future datasets that exhibit the desired characteristics.
 
-We first conduct a study of 72 vulnerability datasets, including 62 academic publications and 10 industrial datasets, then we identify and systematize 31 vulnerability datasets that are publicly available.
+We first conduct a study of 72 vulnerability datasets, including 64 academic publications and 8 industrial datasets, then we identify and systematize 32 vulnerability datasets that are publicly available.
 We also discuss future research directions.
 
 ## Vulnerability Datasets
@@ -23,6 +23,7 @@ We also discuss future research directions.
 | [Lin et al.](https://ieeexplore.ieee.org/document/8906156) | Software Vulnerability Discovery via Learning Multi-Domain Knowledge Bases | TDSC | 2021 | [link](https://github.com/DanielLin1986/RepresentationsLearningFromMulti_domain) |
 | [Lipp et al.](https://dl.acm.org/doi/abs/10.1145/3533767.3534380) | An Empirical Study on the Effectiveness of Static C Code Analyzers for Vulnerability Detection | ISSTA | 2022 | [link](https://doi.org/10.5281/zenodo.6515687) |
 | [Magma](https://dl.acm.org/doi/abs/10.1145/3410220.3456276) | Magma: A Ground-Truth Fuzzing Benchmark | POMACS | 2021 | [link](https://github.com/HexHive/magma) |
+| [MegaVul](https://ieeexplore.ieee.org/abstract/document/10555623) | MegaVul: A C/C++ Vulnerability Dataset with Comprehensive Code Representations | MSR | 2024 | [link](https://github.com/Icyrockton/MegaVul) |
 | [mVulDeePecker](https://ieeexplore.ieee.org/document/8846081) | mVulDeePecker: A Deep Learning-Based System for Multiclass Vulnerability Detection | TDSC | 2021 | [link](https://github.com/muVulDeePecker/muVulDeePecker) |
 | [Pan et al.](https://dl.acm.org/doi/abs/10.1145/3524842.3528433) | On the Use of Fine-grained Vulnerable Code Statements for Software Vulnerability Assessment Models | ICSE | 2023 | [link](https://figshare.com/articles/online_resource/TreeVul_-_Replication_Package/19727050) |
 | [PatchDB](https://ieeexplore.ieee.org/abstract/document/9505097/) | PatchDB: A Large-Scale Security Patch Dataset | DSN | 2021 | [link](https://github.com/SunLab-GMU/PatchDB) |
@@ -51,6 +52,7 @@ We also discuss future research directions.
 - CasualVul: [Towards Causal Deep Learning for Vulnerability Detection](https://dl.acm.org/doi/10.1145/3597503.3639170)
 - Le et al.: [On the Use of Fine-grained Vulnerable Code Statements for Software Vulnerability Assessment Models](https://dl.acm.org/doi/10.1145/3524842.3528433)
 - PatchRNN: [PatchRNN: A Deep Learning-Based System for Security Patch Identification](https://ieeexplore.ieee.org/document/9652940)
+- GraphSPD: [GraphSPD: Graph-Based Security Patch Detection with Enriched Code Semantics](https://ieeexplore.ieee.org/abstract/document/10179479)
 - TreeVul: [Fine-grained Commit-level Vulnerability Type Prediction by CWE Tree Structure](https://ieeexplore.ieee.org/document/10172785)
 - VulMaster: [Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources](https://dl.acm.org/doi/10.1145/3597503.3639222)
 - VulRepair: [VulRepair: A T5-Based Automated Software Vulnerability Repair](https://dl.acm.org/doi/10.1145/3540250.3549098)

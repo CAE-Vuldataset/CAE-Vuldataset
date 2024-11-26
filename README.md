@@ -7,7 +7,7 @@ We first conduct a study of 72 vulnerability datasets, including 64 academic pub
 We also discuss future research directions.
 
 ## Vulnerability Datasets
-31 open-source vulnerability datasets along with their corresponding papers and open-source links:
+32 open-source vulnerability datasets along with their corresponding papers and open-source links:
 | Dataset | Paper | Venue/Organization | Year | Link (for Datasets) |
 | --- | --- | --- | --- | --- |
 | [Benchmark](https://link.springer.com/chapter/10.1007/978-3-030-41579-2_13) | Deep learning-based vulnerable function detection: A benchmark | ICICS | 2019 | [link](https://github.com/Seahymn2019/Function-level-Vulnerability-Dataset/tree/master/Data) |

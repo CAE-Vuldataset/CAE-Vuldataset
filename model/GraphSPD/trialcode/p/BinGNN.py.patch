@@ -1,0 +1,28 @@
+--- a/BinGNN.py	2023-02-28 21:09:37.307755274 -0500
++++ b/BinGNN.py	2023-02-28 21:47:05.424776150 -0500
+@@ -25 +25 @@
+-_MAXEPOCHS_ = 300
++_MAXEPOCHS_ = 1000
+@@ -51 +51 @@
+-    dataset = GetDataset(path=dataPath)  # get dataset from local dataset.
++    dataset, filelist = GetDataset(path=dataPath)  # get dataset from local dataset.
+@@ -55 +55,2 @@
+-    dataTrain, dataTest = TrainTestSplit(dataset, train_size=0.8, allow_shuffle=False)
++    dataTrain, dataTest = TrainTestSplit(dataset, train_size=_TRAINRATE_, allow_shuffle=False)
++    fileTrain, fileTest = filelist[0:len(dataTrain)], filelist[len(dataTrain):]
+@@ -65 +66,6 @@
+-    demo_BinGNN(trainloader, testloader, dim_features=len(dataset[0].x_s[0]))
++    model = demo_BinGNN(trainloader, testloader, dim_features=len(dataset[0].x_s[0]))
++    # output results on test data.
++    _, testPred, _ = BGNNTest(model, testloader)
++    with open(logsPath + 'TestResults.txt', 'w') as f:
++        for i in range(len(fileTest)):
++            f.write(fileTest[i] + ',' + str(testPred[i]) + '\n')
+@@ -95 +101 @@
+-        # evaluation with the best model.
++    # evaluation with the best model.
+@@ -100 +106 @@
+-    return 
++    return model
+@@ -115,0 +122 @@
++    main()
